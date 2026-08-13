@@ -1,0 +1,6490 @@
+{
+  "checkedAt": "2026-08-12",
+  "products": {
+    "panasonic-na-lx129e": {
+      "performance": {
+        "washTimeMin": 32,
+        "washDryTimeMin": 98,
+        "washDryEcoTimeMin": 165,
+        "waterL": 83,
+        "washDryWaterL": 55,
+        "energyWh": 68,
+        "washDryEnergyWh": 800,
+        "washDryEcoEnergyWh": 620,
+        "washDb": 32,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 81,
+        "pan": "奥行（内寸）540mm以上",
+        "bodyWidthMm": 604
+      },
+      "drying": {
+        "method": "ヒ―トポンプ方式"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥",
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "熱交換器洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "カラータッチパネル",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（切り取り式）",
+        "panel": "カラ―タッチパネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "熱交換器洗浄",
+          "description": "乾燥時に使う熱交換器を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "カラータッチパネル",
+          "description": "カラー表示のタッチパネルでコースや設定を確認できます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-LX129EL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-LX129EL.html"
+    },
+    "panasonic-na-sd10ha": {
+      "performance": {
+        "washTimeMin": 33,
+        "washDryTimeMin": 195,
+        "waterL": 78,
+        "washDryWaterL": 65,
+        "energyWh": 70,
+        "washDryEnergyWh": 1980,
+        "washDb": 37,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 650,
+        "heightMm": 1010,
+        "massKg": 65,
+        "pan": "奥行（内寸）540mm以上"
+      },
+      "drying": {
+        "method": "低温風パワフル乾燥（ヒーター/排気式）"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能"
+        ],
+        "dryingHighlights": [
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（伸縮式）",
+        "panel": "LED操作パネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-SD10HAL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-SD10HAL.html"
+    },
+    "panasonic-na-sd10hb": {
+      "performance": {
+        "washTimeMin": 33,
+        "washDryTimeMin": 195,
+        "waterL": 78,
+        "washDryWaterL": 65,
+        "energyWh": 70,
+        "washDryEnergyWh": 1980,
+        "washDb": 37,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 650,
+        "heightMm": 1010,
+        "massKg": 65,
+        "pan": "奥行（内寸）540mm以上"
+      },
+      "drying": {
+        "method": "低温風パワフル乾燥（ヒーター/排気式）"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥"
+        ],
+        "careHighlights": [
+          "自動槽洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯"
+        ],
+        "drainage": "左･右･後方 3方向+真下(切り取り式）",
+        "panel": "LED操作パネル"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-SD10HBL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-SD10HBL.html"
+    },
+    "panasonic-na-sd10ua": {
+      "performance": {
+        "washTimeMin": 33,
+        "washDryTimeMin": 195,
+        "waterL": 78,
+        "washDryWaterL": 65,
+        "energyWh": 70,
+        "washDryEnergyWh": 1980,
+        "washDb": 37,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 650,
+        "heightMm": 1010,
+        "massKg": 65,
+        "pan": "奥行（内寸）540mm以上"
+      },
+      "drying": {
+        "method": "低温風パワフル乾燥（ヒーター/排気式）"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [],
+        "dryingHighlights": [
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（伸縮式）",
+        "panel": "LED操作パネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-SD10UAL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-SD10UAL.html"
+    },
+    "panasonic-na-lx113e": {
+      "performance": {
+        "washTimeMin": 31,
+        "washDryTimeMin": 119,
+        "washDryEcoTimeMin": 192,
+        "waterL": 78,
+        "washDryWaterL": 55,
+        "energyWh": 68,
+        "washDryEnergyWh": 945,
+        "washDryEcoEnergyWh": 680,
+        "washDb": 32,
+        "spinDb": 42,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 77,
+        "pan": "奥行（内寸）540mm以上",
+        "bodyWidthMm": 604
+      },
+      "drying": {
+        "method": "ヒ―トポンプ方式"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥",
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "熱交換器洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（切り取り式）",
+        "panel": "LED操作パネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "熱交換器洗浄",
+          "description": "乾燥時に使う熱交換器を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-LX113EL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-LX113EL.html"
+    },
+    "panasonic-na-lx125e": {
+      "performance": {
+        "washTimeMin": 32,
+        "washDryTimeMin": 119,
+        "washDryEcoTimeMin": 192,
+        "waterL": 83,
+        "washDryWaterL": 55,
+        "energyWh": 68,
+        "washDryEnergyWh": 945,
+        "washDryEcoEnergyWh": 680,
+        "washDb": 32,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 80,
+        "pan": "奥行（内寸）540mm以上",
+        "bodyWidthMm": 604
+      },
+      "drying": {
+        "method": "ヒ―トポンプ方式"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥",
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "熱交換器洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（切り取り式）",
+        "panel": "ホワイト液晶操作パネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "熱交換器洗浄",
+          "description": "乾燥時に使う熱交換器を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-LX125EL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-LX125EL.html"
+    },
+    "panasonic-na-sd10ub": {
+      "performance": {
+        "washTimeMin": 33,
+        "washDryTimeMin": 195,
+        "waterL": 78,
+        "washDryWaterL": 65,
+        "energyWh": 70,
+        "washDryEnergyWh": 1980,
+        "washDb": 37,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 650,
+        "heightMm": 1010,
+        "massKg": 65,
+        "pan": "奥行（内寸）540mm以上"
+      },
+      "drying": {
+        "method": "低温風パワフル乾燥（ヒーター/排気式）"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥"
+        ],
+        "careHighlights": [
+          "自動槽洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯"
+        ],
+        "drainage": "左･右･後方 3方向+真下(切り取り式）",
+        "panel": "LED操作パネル"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-SD10UBL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-SD10UBL.html"
+    },
+    "panasonic-na-lx127e": {
+      "performance": {
+        "washTimeMin": 32,
+        "washDryTimeMin": 98,
+        "washDryEcoTimeMin": 165,
+        "waterL": 83,
+        "washDryWaterL": 55,
+        "energyWh": 68,
+        "washDryEnergyWh": 800,
+        "washDryEcoEnergyWh": 620,
+        "washDb": 32,
+        "spinDb": 41,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 639,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 81,
+        "pan": "奥行（内寸）540mm以上",
+        "bodyWidthMm": 604
+      },
+      "drying": {
+        "method": "ヒ―トポンプ方式"
+      },
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥",
+          "ジェット乾燥"
+        ],
+        "careHighlights": [
+          "ナノイーX",
+          "自動槽洗浄",
+          "熱交換器洗浄",
+          "窓パッキング洗い"
+        ],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左･右･後方 3方向+真下（切り取り式）",
+        "panel": "ホワイト液晶操作パネル"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ジェット乾燥",
+          "description": "風を衣類へ当て、乾燥時の仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナノイーX",
+          "description": "ナノイーXを使う対応コースで衣類や槽の衛生ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "自動槽洗浄",
+          "description": "すすぎ工程の水などを利用して洗濯槽を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "熱交換器洗浄",
+          "description": "乾燥時に使う熱交換器を自動で洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "窓パッキング洗い",
+          "description": "ドア窓のパッキング部へ水を流して汚れを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-LX127EL/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-LX127EL.html"
+    },
+    "panasonic-na-fa11k5": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 137,
+        "energyWh": 68,
+        "washDb": 37,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "pan": "奥行き(内寸)540mm以上 幅(内寸)590mm以上 壁から防水フロア内寸端面の寸法600mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA11K5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA11K5.html"
+    },
+    "panasonic-na-fa12v5": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 139,
+        "energyWh": 70,
+        "washDb": 37,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "pan": "奥行き(内寸)540mm以上 幅(内寸)590mm以上 壁から防水フロア内寸端面の寸法600mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA12V5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA12V5.html"
+    },
+    "panasonic-na-fa10h5": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 103,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 40,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法580mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA10H5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA10H5.html"
+    },
+    "panasonic-na-fa7h5": {
+      "performance": {
+        "washTimeMin": 35,
+        "waterL": 89,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 34,
+        "pan": "奥行き(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA7H5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA7H5.html"
+    },
+    "panasonic-na-fa10k5": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 103,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA10K5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA10K5.html"
+    },
+    "panasonic-na-fa9k5": {
+      "performance": {
+        "washTimeMin": 33,
+        "waterL": 97,
+        "energyWh": 48,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA9K5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA9K5.html"
+    },
+    "panasonic-na-fa8h5": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 96,
+        "energyWh": 51,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 34,
+        "pan": "奥行き(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA8H5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA8H5.html"
+    },
+    "panasonic-na-f7b5": {
+      "performance": {
+        "washTimeMin": 43,
+        "waterL": 107,
+        "washDb": 37,
+        "spinDb": 46
+      },
+      "dimensions": {
+        "massKg": 29,
+        "pan": "奥行(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左･右 2方向(後出し)"
+      },
+      "features": [],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-F7B5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-F7B5.html"
+    },
+    "panasonic-na-fa8k5": {
+      "performance": {
+        "washTimeMin": 32,
+        "waterL": 92,
+        "energyWh": 47,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し・伸縮式)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA8K5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA8K5.html"
+    },
+    "panasonic-na-f6b5": {
+      "performance": {
+        "washTimeMin": 42,
+        "waterL": 96,
+        "washDb": 37,
+        "spinDb": 46
+      },
+      "dimensions": {
+        "massKg": 28,
+        "pan": "奥行(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左･右 2方向(後出し)"
+      },
+      "features": [],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-F6B5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-F6B5.html"
+    },
+    "panasonic-na-f5b5": {
+      "performance": {
+        "washTimeMin": 40,
+        "waterL": 94,
+        "washDb": 39,
+        "spinDb": 49
+      },
+      "dimensions": {
+        "massKg": 28,
+        "pan": "奥行(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左･右 2方向(後出し)"
+      },
+      "features": [],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-F5B5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-F5B5.html"
+    },
+    "panasonic-na-f7pb5": {
+      "performance": {
+        "washTimeMin": 43,
+        "waterL": 107,
+        "washDb": 37,
+        "spinDb": 46
+      },
+      "dimensions": {
+        "massKg": 30,
+        "pan": "奥行(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左･右 2方向(後出し)"
+      },
+      "features": [],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-F7PB5/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-F7PB5.html"
+    },
+    "panasonic-na-fa12v6": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 139,
+        "energyWh": 70,
+        "washDb": 37,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 694,
+        "heightMm": 1086,
+        "pan": "奥行き(内寸)540mm以上 幅(内寸)590mm以上 壁から防水フロア内寸端面の寸法600mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "トリプル自動投入",
+        "smartphone": "スマホで洗濯",
+        "washHighlights": [
+          "温水機能",
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い",
+          "汚れはがし"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "トリプル自動投入",
+          "スマホで洗濯",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "トリプル自動投入",
+          "description": "液体洗剤・柔軟剤に加え、選べる剤を含む3つのタンクから自動投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水機能",
+          "description": "温水を使う対応コースで、皮脂汚れや黄ばみなどに配慮して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "スマホで洗濯",
+          "description": "対応アプリからコース設定や運転状況の確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "汚れはがし",
+          "description": "専用の対応コース・剤を使って、落ちにくい汚れに対応します。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA12V6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA12V6.html"
+    },
+    "panasonic-na-fa9k6": {
+      "performance": {
+        "washTimeMin": 33,
+        "waterL": 97,
+        "energyWh": 48,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 592,
+        "depthMm": 635,
+        "heightMm": 1071,
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA9K6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA9K6.html"
+    },
+    "panasonic-na-fa8h6": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 96,
+        "energyWh": 51,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 558,
+        "depthMm": 573,
+        "heightMm": 1022,
+        "massKg": 34,
+        "pan": "奥行き(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA8H6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA8H6.html"
+    },
+    "panasonic-na-fa7h6": {
+      "performance": {
+        "washTimeMin": 35,
+        "waterL": 89,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 558,
+        "depthMm": 573,
+        "heightMm": 1022,
+        "massKg": 34,
+        "pan": "奥行き(内寸)540mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA7H6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA7H6.html"
+    },
+    "panasonic-na-jfa8k6": {
+      "performance": {
+        "washTimeMin": 33,
+        "waterL": 92,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 592,
+        "depthMm": 635,
+        "heightMm": 1075,
+        "massKg": 41,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "スゴ落ち泡洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-JFA8K6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-JFA8K6.html"
+    },
+    "panasonic-na-fa10h6": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 103,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 592,
+        "depthMm": 628,
+        "heightMm": 1024,
+        "massKg": 40,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法580mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA10H6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA10H6.html"
+    },
+    "panasonic-na-fa8k6": {
+      "performance": {
+        "washTimeMin": 32,
+        "waterL": 92,
+        "energyWh": 47,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 592,
+        "depthMm": 635,
+        "heightMm": 1071,
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA8K6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA8K6.html"
+    },
+    "hitachi-bd-stx130m": {
+      "performance": {
+        "washTimeMin": 36,
+        "washDryTimeMin": 93,
+        "washDryEcoTimeMin": 200,
+        "waterL": 94,
+        "washDryWaterL": 65,
+        "energyWh": 85,
+        "washDryEnergyWh": 1150,
+        "washDryEcoEnergyWh": 680,
+        "washDb": 34,
+        "spinDb": 37,
+        "dryDb": 49
+      },
+      "dimensions": {
+        "widthMm": 630,
+        "depthMm": 720,
+        "heightMm": 1065,
+        "massKg": 93,
+        "pan": "540mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "らくはや 風アイロン（ヒートポンプ式）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラ洗浄",
+          "description": "高濃度の洗剤液と大流量の水流を組み合わせて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "温水ナイアガラ洗浄",
+          "description": "温水を使う対応コースで黄ばみなどの汚れに対応します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "らくはや 風アイロン",
+          "description": "高速の風で乾燥しながら衣類のシワを伸ばすことに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ヒートポンプ式",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "らくメンテ",
+          "description": "乾燥フィルターレスなど、日常のお手入れ負担を抑える機能群です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥経路自動おそうじ",
+          "description": "乾燥経路に付着したほこりを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動おそうじ",
+          "description": "ドアパッキン部に付着した糸くずなどを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリで運転状況の確認や対応コースの設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "ハピネスアップ",
+        "washHighlights": [
+          "ナイアガラ洗浄",
+          "高濃度洗浄",
+          "AIお洗濯",
+          "温水ナイアガラ洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [
+          "らくはや 風アイロン",
+          "ヒートポンプ式"
+        ],
+        "careHighlights": [
+          "らくメンテ",
+          "洗濯槽自動おそうじ",
+          "乾燥経路自動おそうじ",
+          "ドアパッキン自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水",
+          "スマートフォン連携"
+        ],
+        "panel": "ワイドカラー液晶タッチパネル",
+        "drainHoseLength": "56／91cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-stx130m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-stx130m/"
+    },
+    "panasonic-na-fa10k6": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 103,
+        "energyWh": 50,
+        "washDb": 32,
+        "spinDb": 39
+      },
+      "dimensions": {
+        "widthMm": 592,
+        "depthMm": 635,
+        "heightMm": 1071,
+        "massKg": 43,
+        "pan": "奥行き(内寸)540mm以上 壁から防水フロア内寸端面の寸法590mm以上"
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "スゴ落ち泡洗浄",
+          "パワフル滝洗い"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "AI エコナビ"
+        ],
+        "drainage": "左・右2方向(後出し)"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "洗濯物に合わせて液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スゴ落ち泡洗浄",
+          "description": "洗剤を泡立てて衣類へ浸透させ、水流と組み合わせて洗う機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "パワフル滝洗い",
+          "description": "大きな水流で衣類を動かして洗う縦型の洗浄コースです。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AI エコナビ",
+          "description": "センサー情報を使って運転を調整します。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://panasonic.jp/wash/products/NA-FA10K6/spec.html",
+      "featureUrl": "https://panasonic.jp/wash/products/NA-FA10K6.html"
+    },
+    "hitachi-bd-sx130m": {
+      "performance": {
+        "washTimeMin": 36,
+        "washDryTimeMin": 93,
+        "washDryEcoTimeMin": 200,
+        "waterL": 94,
+        "washDryWaterL": 65,
+        "energyWh": 85,
+        "washDryEnergyWh": 1150,
+        "washDryEcoEnergyWh": 680,
+        "washDb": 34,
+        "spinDb": 37,
+        "dryDb": 49
+      },
+      "dimensions": {
+        "widthMm": 630,
+        "depthMm": 720,
+        "heightMm": 1065,
+        "massKg": 93,
+        "pan": "540mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "らくはや 風アイロン（ヒートポンプ式）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラ洗浄",
+          "description": "高濃度の洗剤液と大流量の水流を組み合わせて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "温水ナイアガラ洗浄",
+          "description": "温水を使う対応コースで黄ばみなどの汚れに対応します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "らくはや 風アイロン",
+          "description": "高速の風で乾燥しながら衣類のシワを伸ばすことに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ヒートポンプ式",
+          "description": "ヒートポンプで除湿しながら乾燥する方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "らくメンテ",
+          "description": "乾燥フィルターレスなど、日常のお手入れ負担を抑える機能群です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥経路自動おそうじ",
+          "description": "乾燥経路に付着したほこりを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動おそうじ",
+          "description": "ドアパッキン部に付着した糸くずなどを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリで運転状況の確認や対応コースの設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "ハピネスアップ",
+        "washHighlights": [
+          "ナイアガラ洗浄",
+          "高濃度洗浄",
+          "AIお洗濯",
+          "温水ナイアガラ洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [
+          "らくはや 風アイロン",
+          "ヒートポンプ式"
+        ],
+        "careHighlights": [
+          "らくメンテ",
+          "洗濯槽自動おそうじ",
+          "乾燥経路自動おそうじ",
+          "ドアパッキン自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水",
+          "スマートフォン連携"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "56／91cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sx130m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sx130m/"
+    },
+    "hitachi-bw-dv80m": {
+      "performance": {
+        "washTimeMin": 28,
+        "washDryTimeMin": 175,
+        "waterL": 92,
+        "washDryWaterL": 103,
+        "energyWh": 36,
+        "washDryEnergyWh": 1720,
+        "washDb": 32,
+        "spinDb": 38,
+        "dryDb": 43
+      },
+      "dimensions": {
+        "widthMm": 610,
+        "depthMm": 635,
+        "heightMm": 1040,
+        "massKg": 52,
+        "pan": "540mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {
+        "method": "速乾ビート乾燥"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "AIお洗濯",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "73／107cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-dv80m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-dv80m/"
+    },
+    "hitachi-bd-sw120m": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryTimeMin": 98,
+        "waterL": 88,
+        "washDryWaterL": 86,
+        "energyWh": 78,
+        "washDryEnergyWh": 1570,
+        "washDb": 34,
+        "spinDb": 37,
+        "dryDb": 49
+      },
+      "dimensions": {
+        "widthMm": 638,
+        "depthMm": 716,
+        "heightMm": 1065,
+        "massKg": 82,
+        "pan": "540mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "風アイロン（低温ヒート式）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラ洗浄",
+          "description": "高濃度の洗剤液と大流量の水流を組み合わせて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "温水ナイアガラ洗浄",
+          "description": "温水を使う対応コースで黄ばみなどの汚れに対応します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "らくはや 風アイロン",
+          "description": "高速の風で乾燥しながら衣類のシワを伸ばすことに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "らくメンテ",
+          "description": "乾燥フィルターレスなど、日常のお手入れ負担を抑える機能群です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥経路自動おそうじ",
+          "description": "乾燥経路に付着したほこりを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動おそうじ",
+          "description": "ドアパッキン部に付着した糸くずなどを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリで運転状況の確認や対応コースの設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "ハピネスアップ",
+        "washHighlights": [
+          "ナイアガラ洗浄",
+          "高濃度洗浄",
+          "AIお洗濯",
+          "温水ナイアガラ洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [
+          "らくはや 風アイロン"
+        ],
+        "careHighlights": [
+          "らくメンテ",
+          "洗濯槽自動おそうじ",
+          "乾燥経路自動おそうじ",
+          "ドアパッキン自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水",
+          "スマートフォン連携"
+        ],
+        "panel": "ガラスタッチ式操作パネル",
+        "drainHoseLength": "88／58cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sw120m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sw120m/"
+    },
+    "hitachi-bw-x100m": {
+      "performance": {
+        "washTimeMin": 30,
+        "energyWh": 51
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 650,
+        "heightMm": 1000,
+        "massKg": 39,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x100m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x100m/"
+    },
+    "hitachi-bw-x90m": {
+      "performance": {
+        "washTimeMin": 29,
+        "energyWh": 47
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 650,
+        "heightMm": 1000,
+        "massKg": 39,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x90m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x90m/"
+    },
+    "hitachi-bw-v100m": {
+      "performance": {
+        "washTimeMin": 30,
+        "energyWh": 51
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 610,
+        "heightMm": 1000,
+        "massKg": 38,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v100m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v100m/"
+    },
+    "hitachi-bw-dx100m": {
+      "performance": {
+        "washTimeMin": 30,
+        "washDryTimeMin": 195,
+        "waterL": 103,
+        "washDryWaterL": 126,
+        "energyWh": 39,
+        "washDryEnergyWh": 2030,
+        "washDb": 32,
+        "spinDb": 38,
+        "dryDb": 43
+      },
+      "dimensions": {
+        "widthMm": 610,
+        "depthMm": 660,
+        "heightMm": 1105,
+        "massKg": 55,
+        "pan": "540mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {
+        "method": "速乾ビート乾燥"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "洗濯コンシェルジュ",
+        "washHighlights": [
+          "高濃度洗浄",
+          "AIお洗濯",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "ガラスタッチ式操作パネル",
+        "drainHoseLength": "73／107cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-dx100m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-dx100m/"
+    },
+    "hitachi-bd-sv120m": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryTimeMin": 98,
+        "waterL": 88,
+        "washDryWaterL": 86,
+        "energyWh": 78,
+        "washDryEnergyWh": 1570,
+        "washDb": 34,
+        "spinDb": 37,
+        "dryDb": 49
+      },
+      "dimensions": {
+        "widthMm": 638,
+        "depthMm": 716,
+        "heightMm": 1065,
+        "massKg": 81,
+        "pan": "540mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "風アイロン（低温ヒート式）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラ洗浄",
+          "description": "高濃度の洗剤液と大流量の水流を組み合わせて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "らくはや 風アイロン",
+          "description": "高速の風で乾燥しながら衣類のシワを伸ばすことに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "らくメンテ",
+          "description": "乾燥フィルターレスなど、日常のお手入れ負担を抑える機能群です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥経路自動おそうじ",
+          "description": "乾燥経路に付着したほこりを自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動おそうじ",
+          "description": "ドアパッキン部に付着した糸くずなどを自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラ洗浄"
+        ],
+        "dryingHighlights": [
+          "らくはや 風アイロン"
+        ],
+        "careHighlights": [
+          "らくメンテ",
+          "洗濯槽自動おそうじ",
+          "乾燥経路自動おそうじ",
+          "ドアパッキン自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "88／58cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sv120m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bd-sv120m/"
+    },
+    "hitachi-bw-x120m": {
+      "performance": {
+        "waterL": 123
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 650,
+        "heightMm": 1077,
+        "massKg": 55,
+        "pan": "530mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "洗濯コンシェルジュ ＊1",
+        "washHighlights": [
+          "高濃度洗浄",
+          "AIお洗濯",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "116／73cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x120m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x120m/"
+    },
+    "hitachi-bw-v80m": {
+      "performance": {
+        "washTimeMin": 28,
+        "energyWh": 45
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 610,
+        "heightMm": 930,
+        "massKg": 36,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v80m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v80m/"
+    },
+    "hitachi-bw-v70m": {
+      "performance": {
+        "washTimeMin": 27,
+        "energyWh": 36
+      },
+      "dimensions": {
+        "widthMm": 577,
+        "depthMm": 586,
+        "heightMm": 980,
+        "massKg": 35,
+        "pan": "530mm以上",
+        "bodyWidthMm": 530
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "109／82cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v70m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v70m/"
+    },
+    "hitachi-bw-g70m": {
+      "performance": {
+        "washTimeMin": 35,
+        "energyWh": 43
+      },
+      "dimensions": {
+        "widthMm": 577,
+        "depthMm": 586,
+        "heightMm": 980,
+        "massKg": 32,
+        "pan": "530mm以上",
+        "bodyWidthMm": 530
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "109／82cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-g70m/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-g70m/"
+    },
+    "hitachi-bw-x120p": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 123,
+        "energyWh": 64
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 650,
+        "heightMm": 1077,
+        "massKg": 55,
+        "pan": "530mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "AIお洗濯",
+          "description": "複数のセンシング情報を使って洗い方や運転時間を調整します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリで運転状況の確認や対応コースの設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "ハピネスアップ",
+        "washHighlights": [
+          "高濃度洗浄",
+          "AIお洗濯",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水",
+          "スマートフォン連携"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "116／73cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x120p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x120p/"
+    },
+    "hitachi-bw-x90p": {
+      "performance": {
+        "washTimeMin": 28,
+        "waterL": 99,
+        "energyWh": 46
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 650,
+        "heightMm": 1000,
+        "massKg": 39,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x90p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x90p/"
+    },
+    "hitachi-nw-r706": {
+      "performance": {
+        "waterL": 110
+      },
+      "dimensions": {
+        "widthMm": 560,
+        "depthMm": 563,
+        "heightMm": 890,
+        "massKg": 32
+      },
+      "features": [
+        {
+          "name": "シャワー浸透洗浄",
+          "description": "洗剤液を衣類へ浸透させて洗う機能です。",
+          "groupId": "washing"
+        }
+      ],
+      "specDetails": {
+        "washHighlights": [
+          "シャワー浸透洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": []
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/support/wash/item/docs/nw-r706_1new.pdf"
+    },
+    "hitachi-bw-x100p": {
+      "performance": {
+        "washTimeMin": 29,
+        "waterL": 103,
+        "energyWh": 50
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 650,
+        "heightMm": 1000,
+        "massKg": 39,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x100p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-x100p/"
+    },
+    "hitachi-bw-v100p": {
+      "performance": {
+        "washTimeMin": 29,
+        "waterL": 103,
+        "energyWh": 50
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 610,
+        "heightMm": 1000,
+        "massKg": 38,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v100p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v100p/"
+    },
+    "hitachi-bw-v80p": {
+      "performance": {
+        "washTimeMin": 27,
+        "waterL": 92,
+        "energyWh": 44
+      },
+      "dimensions": {
+        "widthMm": 608,
+        "depthMm": 610,
+        "heightMm": 930,
+        "massKg": 36,
+        "pan": "530mm以上",
+        "bodyWidthMm": 570
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "82／109cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v80p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v80p/"
+    },
+    "hitachi-bw-v70p": {
+      "performance": {
+        "washTimeMin": 26,
+        "waterL": 86,
+        "energyWh": 35
+      },
+      "dimensions": {
+        "widthMm": 577,
+        "depthMm": 586,
+        "heightMm": 980,
+        "massKg": 35,
+        "pan": "530mm以上",
+        "bodyWidthMm": 530
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ナイアガラすすぎ",
+          "description": "大流量の水を循環させてすすぐ機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "洗濯槽自動おそうじ",
+          "description": "すすぎ後に洗濯槽を自動で洗い流します。",
+          "groupId": "care"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄",
+          "ナイアガラすすぎ"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "洗濯槽自動おそうじ"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "109／82cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v70p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-v70p/"
+    },
+    "hitachi-bw-g70p": {
+      "performance": {
+        "washTimeMin": 34,
+        "waterL": 95,
+        "energyWh": 42
+      },
+      "dimensions": {
+        "widthMm": 577,
+        "depthMm": 586,
+        "heightMm": 980,
+        "massKg": 32,
+        "pan": "530mm以上",
+        "bodyWidthMm": 530
+      },
+      "drying": {},
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "高濃度洗浄",
+          "description": "高濃度の洗剤液を衣類へ浸透させて洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ほぐし脱水",
+          "description": "脱水後に衣類をほぐして取り出しやすくします。",
+          "groupId": "convenience"
+        }
+      ],
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "高濃度洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ほぐし脱水"
+        ],
+        "panel": "プッシュボタン式操作パネル",
+        "drainHoseLength": "109／82cm"
+      },
+      "officialUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-g70p/spec.html",
+      "featureUrl": "https://kadenfan.hitachi.co.jp/wash/lineup/bw-g70p/"
+    },
+    "sharp-es-12p1": {
+      "performance": {
+        "washTimeMin": 42,
+        "washDryTimeMin": 160,
+        "waterL": 83,
+        "washDryWaterL": 54,
+        "energyWh": 75,
+        "washDryEnergyWh": 700,
+        "washDb": 26,
+        "spinDb": 39,
+        "dryDb": 42
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 719,
+        "heightMm": 1120,
+        "massKg": 78,
+        "pan": "540mm以上",
+        "bodyWidthMm": 596,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ヒートポンプ乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "マイクロ高圧洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥"
+        ],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除",
+          "ドアパッキン自動洗浄",
+          "するポイフィルター"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右 2方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "マイクロ高圧洗浄",
+          "description": "微細な水滴を高圧で衣類へ噴射して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動洗浄",
+          "description": "ドアパッキン部を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "するポイフィルター",
+          "description": "糸くずをまとめて捨てやすいフィルターです。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es12p1/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es12p1/"
+    },
+    "sharp-es-12x1": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryTimeMin": 150,
+        "waterL": 77,
+        "washDryWaterL": 49,
+        "energyWh": 65,
+        "washDryEnergyWh": 590,
+        "washDb": 32,
+        "spinDb": 39,
+        "dryDb": 42
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 719,
+        "heightMm": 1120,
+        "massKg": 80,
+        "pan": "540mm以上",
+        "bodyWidthMm": 596,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ハイブリッド乾燥NEXT"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "マイクロ高圧洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [
+          "ハイブリッド乾燥NEXT"
+        ],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥フィルター自動お掃除",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除",
+          "ドアパッキン自動洗浄",
+          "するポイフィルター"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右 2方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "マイクロ高圧洗浄",
+          "description": "微細な水滴を高圧で衣類へ噴射して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ハイブリッド乾燥NEXT",
+          "description": "ヒートポンプとサポートヒーターを組み合わせた乾燥方式です。",
+          "groupId": "drying"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥フィルター自動お掃除",
+          "description": "乾燥フィルターにたまるほこりを自動で集めます。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動洗浄",
+          "description": "ドアパッキン部を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "するポイフィルター",
+          "description": "糸くずをまとめて捨てやすいフィルターです。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es12x1/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es12x1/"
+    },
+    "sharp-es-11k1": {
+      "performance": {
+        "washTimeMin": 45,
+        "waterL": 75,
+        "washDryWaterL": 96,
+        "energyWh": 80,
+        "washDb": 26,
+        "spinDb": 39,
+        "dryDb": 41
+      },
+      "dimensions": {
+        "widthMm": 645,
+        "depthMm": 732,
+        "heightMm": 1100,
+        "pan": "540mm以上",
+        "bodyWidthMm": 595,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥（水冷除湿）、無排気乾燥"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "マイクロ高圧洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除",
+          "ドアパッキン自動洗浄",
+          "するポイフィルター"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方の3方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "マイクロ高圧洗浄",
+          "description": "微細な水滴を高圧で衣類へ噴射して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動洗浄",
+          "description": "ドアパッキン部を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "するポイフィルター",
+          "description": "糸くずをまとめて捨てやすいフィルターです。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es11k1/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es11k1/"
+    },
+    "sharp-es-8xs1": {
+      "performance": {
+        "washTimeMin": 42,
+        "washDryTimeMin": 148,
+        "waterL": 57,
+        "washDryWaterL": 39,
+        "energyWh": 55,
+        "washDryEnergyWh": 800,
+        "washDb": 30,
+        "spinDb": 39,
+        "dryDb": 40
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 600,
+        "heightMm": 1040,
+        "massKg": 88,
+        "pan": "540mm以上",
+        "bodyWidthMm": 598,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ヒートポンプ乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "マイクロ高圧洗浄"
+        ],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥"
+        ],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除",
+          "ドアパッキン自動洗浄",
+          "するポイフィルター"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右 2方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "マイクロ高圧洗浄",
+          "description": "微細な水滴を高圧で衣類へ噴射して洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "ドアパッキン自動洗浄",
+          "description": "ドアパッキン部を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "するポイフィルター",
+          "description": "糸くずをまとめて捨てやすいフィルターです。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es8xs1/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es8xs1/"
+    },
+    "sharp-es-7s1": {
+      "performance": {
+        "washTimeMin": 44,
+        "washDryTimeMin": 170,
+        "waterL": 57,
+        "washDryWaterL": 80,
+        "energyWh": 60,
+        "washDryEnergyWh": 1600,
+        "washDb": 24,
+        "spinDb": 39,
+        "dryDb": 38
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 600,
+        "heightMm": 1039,
+        "massKg": 73,
+        "pan": "540mm以上",
+        "bodyWidthMm": 598,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥（水冷除湿）、無排気乾燥"
+      },
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右2方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es7s1/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es7s1/"
+    },
+    "sharp-es-7s2": {
+      "performance": {
+        "washTimeMin": 44,
+        "washDryTimeMin": 170,
+        "waterL": 57,
+        "washDryWaterL": 80,
+        "energyWh": 60,
+        "washDryEnergyWh": 1600,
+        "washDb": 24,
+        "spinDb": 39,
+        "dryDb": 38
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 600,
+        "heightMm": 1039,
+        "massKg": 73,
+        "pan": "540mm以上",
+        "bodyWidthMm": 598,
+        "doorDirection": "左開き / 右開き"
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥（水冷除湿）、無排気乾燥"
+      },
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "プラズマクラスター",
+          "乾燥ダクト自動お掃除",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右2方向+真下 ※",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "乾燥ダクト自動お掃除",
+          "description": "乾燥ダクト内を自動で洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/es7s2/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/es7s2/"
+    },
+    "sharp-es-tx6k": {
+      "performance": {
+        "washTimeMin": 39,
+        "washDryTimeMin": 320,
+        "waterL": 84,
+        "washDryWaterL": 65,
+        "washDb": 42,
+        "spinDb": 46,
+        "dryDb": 47
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 590,
+        "heightMm": 985,
+        "massKg": 35,
+        "pan": "530mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "ヒーター乾燥（タイマー付）"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/estx6k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/estx6k/"
+    },
+    "sharp-es-tx8k": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryWaterL": 75,
+        "energyWh": 67,
+        "washDb": 35,
+        "spinDb": 38,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 650,
+        "heightMm": 1025,
+        "massKg": 44,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥 ※2 、ハンガー除菌・乾燥コース（クリップなしハンガー1本）"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "プラズマクラスター",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/estx8k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/estx8k/"
+    },
+    "sharp-es-pt11l": {
+      "performance": {
+        "washTimeMin": 46,
+        "washDryWaterL": 88,
+        "energyWh": 110,
+        "washDb": 39,
+        "spinDb": 38,
+        "dryDb": 44
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 650,
+        "heightMm": 1050,
+        "massKg": 47,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥 ※2 、ハンガー除菌・乾燥コース（クリップつきハンガー1本）"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "プラズマクラスター",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/espt11l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/espt11l/"
+    },
+    "sharp-es-pw11k": {
+      "performance": {
+        "washTimeMin": 46,
+        "washDryWaterL": 88,
+        "energyWh": 110,
+        "washDb": 39,
+        "spinDb": 38,
+        "dryDb": 44
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 650,
+        "heightMm": 1050,
+        "massKg": 47,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥 ※2 、ハンガー除菌・乾燥コース（クリップつきハンガー1本）"
+      },
+      "specDetails": {
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "穴なしサイクロン洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "プラズマクラスター",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/espw11k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/espw11k/"
+    },
+    "sharp-es-sw10k": {
+      "performance": {
+        "washTimeMin": 45,
+        "energyWh": 98,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 652,
+        "heightMm": 1025,
+        "massKg": 43,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "穴なしサイクロン洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essw10k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essw10k/"
+    },
+    "sharp-es-tx8l": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryWaterL": 75,
+        "energyWh": 67,
+        "washDb": 35,
+        "spinDb": 38,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 650,
+        "heightMm": 1025,
+        "massKg": 44,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "ヒーターセンサー乾燥 ※2 、ハンガー除菌・乾燥コース（クリップなしハンガー1本）"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "プラズマクラスター",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "プラズマクラスター",
+          "description": "プラズマクラスターを使う対応コースで除菌・消臭や槽ケアを行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/estx8l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/estx8l/"
+    },
+    "sharp-es-sv8k": {
+      "performance": {
+        "washTimeMin": 35,
+        "energyWh": 67,
+        "washDb": 35,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 652,
+        "heightMm": 1025,
+        "massKg": 43,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essv8k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essv8k/"
+    },
+    "sharp-es-gv8k": {
+      "performance": {
+        "washTimeMin": 35,
+        "energyWh": 67,
+        "washDb": 35,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 597,
+        "heightMm": 1009,
+        "massKg": 41,
+        "pan": "550mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv8k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv8k/"
+    },
+    "sharp-es-gv10k": {
+      "performance": {
+        "washTimeMin": 45,
+        "energyWh": 98,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 597,
+        "heightMm": 1009,
+        "massKg": 41,
+        "pan": "550mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv10k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv10k/"
+    },
+    "sharp-es-sw11k": {
+      "performance": {
+        "washTimeMin": 46,
+        "energyWh": 110,
+        "washDb": 39,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 652,
+        "heightMm": 1055,
+        "massKg": 44,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "穴なしサイクロン洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essw11k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essw11k/"
+    },
+    "sharp-es-gv7k": {
+      "performance": {
+        "washTimeMin": 34,
+        "energyWh": 54,
+        "washDb": 35,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 597,
+        "heightMm": 1009,
+        "massKg": 41,
+        "pan": "550mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv7k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv7k/"
+    },
+    "sharp-es-ge5k": {
+      "performance": {
+        "washTimeMin": 35
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 540,
+        "heightMm": 890,
+        "massKg": 30,
+        "pan": "535mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥〈化繊1.0kg〉 ※1"
+      },
+      "specDetails": {
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [],
+        "drainage": "右 1 方向＋真下 ※2",
+        "panel": "寸法"
+      },
+      "features": [],
+      "officialUrl": "https://jp.sharp/sentaku/products/esge5k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esge5k/"
+    },
+    "sharp-es-sw11l": {
+      "performance": {
+        "washTimeMin": 46,
+        "energyWh": 110,
+        "washDb": 39,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 652,
+        "heightMm": 1055,
+        "massKg": 44,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "穴なしサイクロン洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essw11l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essw11l/"
+    },
+    "sharp-es-ge7k": {
+      "performance": {
+        "washTimeMin": 40,
+        "energyWh": 105
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 538,
+        "heightMm": 898,
+        "massKg": 32,
+        "pan": "507mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥〈化繊1.0kg〉 ※2"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 ３方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esge7k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esge7k/"
+    },
+    "sharp-es-sw10l": {
+      "performance": {
+        "washTimeMin": 45,
+        "energyWh": 98,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 652,
+        "heightMm": 1025,
+        "massKg": 43,
+        "pan": "540mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "smartphone": "COCORO WASH",
+        "washHighlights": [
+          "穴なしサイクロン洗浄",
+          "AI標準"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入",
+          "COCORO WASH",
+          "音声機能"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        },
+        {
+          "name": "COCORO WASH",
+          "description": "無線LAN対応モデルでは、アプリからコース追加や運転状況確認などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "音声機能",
+          "description": "音声で操作内容や運転状況を案内します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "AI標準",
+          "description": "対応サービスで洗濯状況に合わせた標準運転を利用できます。",
+          "groupId": "washing"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essw10l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essw10l/"
+    },
+    "sharp-es-ge6k": {
+      "performance": {
+        "washTimeMin": 38
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 538,
+        "heightMm": 898,
+        "massKg": 32,
+        "pan": "507mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥〈化繊1.0kg〉 ※1"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 ３方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esge6k/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esge6k/"
+    },
+    "sharp-es-gv10l": {
+      "performance": {
+        "washTimeMin": 45,
+        "energyWh": 98,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 597,
+        "heightMm": 1009,
+        "massKg": 41,
+        "pan": "550mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv10l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv10l/"
+    },
+    "sharp-es-sv8l": {
+      "performance": {
+        "washTimeMin": 38,
+        "energyWh": 67,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 596,
+        "heightMm": 1018,
+        "massKg": 37,
+        "pan": "510mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essv8l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essv8l/"
+    },
+    "sharp-es-sv7l": {
+      "performance": {
+        "washTimeMin": 35,
+        "energyWh": 57,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 596,
+        "heightMm": 1018,
+        "massKg": 37,
+        "pan": "510mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤自動投入",
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤自動投入"
+        ],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/essv7l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/essv7l/"
+    },
+    "sharp-es-gv7l": {
+      "performance": {
+        "washTimeMin": 35,
+        "energyWh": 57,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 596,
+        "heightMm": 1018,
+        "massKg": 36,
+        "pan": "510mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv7l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv7l/"
+    },
+    "sharp-es-gv8l": {
+      "performance": {
+        "washTimeMin": 38,
+        "energyWh": 67,
+        "washDb": 38,
+        "spinDb": 38
+      },
+      "dimensions": {
+        "widthMm": 565,
+        "depthMm": 596,
+        "heightMm": 1018,
+        "massKg": 36,
+        "pan": "510mm以上",
+        "bodyWidthMm": 520
+      },
+      "drying": {
+        "method": "風乾燥 ※2※3"
+      },
+      "specDetails": {
+        "washHighlights": [
+          "穴なしサイクロン洗浄"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "穴なし槽",
+          "洗濯槽自動お掃除"
+        ],
+        "convenienceHighlights": [],
+        "drainage": "左・右・後方 3方向＋真下 ※1",
+        "panel": "寸法"
+      },
+      "features": [
+        {
+          "name": "穴なしサイクロン洗浄",
+          "description": "穴なし槽と水流を組み合わせて衣類を洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "穴なし槽",
+          "description": "洗濯槽の外側へ水が流れにくい穴なし構造です。",
+          "groupId": "care"
+        },
+        {
+          "name": "洗濯槽自動お掃除",
+          "description": "すすぎ水などで洗濯槽を自動洗浄します。",
+          "groupId": "care"
+        }
+      ],
+      "officialUrl": "https://jp.sharp/sentaku/products/esgv8l/spec/",
+      "featureUrl": "https://jp.sharp/sentaku/products/esgv8l/"
+    },
+    "toshiba-tw-127xp5": {
+      "performance": {
+        "washTimeMin": 30,
+        "washDryTimeMin": 87,
+        "washDryEcoTimeMin": 215,
+        "waterL": 80,
+        "washDryWaterL": 61,
+        "energyWh": 70,
+        "washDryEnergyWh": 1330,
+        "washDryEcoEnergyWh": 670,
+        "washDb": 32,
+        "spinDb": 37,
+        "dryDb": 48
+      },
+      "dimensions": {
+        "widthMm": 645,
+        "depthMm": 720,
+        "heightMm": 1060,
+        "massKg": 89,
+        "pan": "奥行内寸520mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "ヒートポンプ除湿乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "温水抗菌ウルトラファインバブル洗浄EX"
+        ],
+        "dryingHighlights": [
+          "ふんわリッチ速乾",
+          "ヒートポンプ除湿乾燥"
+        ],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水抗菌ウルトラファインバブル洗浄EX",
+          "description": "温水と微細な泡を組み合わせ、汚れや黄ばみに対応する洗浄機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ふんわリッチ速乾",
+          "description": "ヒートポンプ除湿乾燥で衣類を乾燥し、仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ヒートポンプ除湿乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xp5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xp5/"
+    },
+    "toshiba-aw-10dpb5": {
+      "performance": {
+        "washTimeMin": 30,
+        "waterL": 119,
+        "energyWh": 79,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1033,
+        "massKg": 51,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dpb5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dpb5/"
+    },
+    "toshiba-tw-127xm5": {
+      "performance": {
+        "washTimeMin": 35,
+        "washDryTimeMin": 89,
+        "washDryEcoTimeMin": 215,
+        "waterL": 80,
+        "washDryWaterL": 61,
+        "energyWh": 70,
+        "washDryEnergyWh": 1330,
+        "washDryEcoEnergyWh": 670,
+        "washDb": 32,
+        "spinDb": 37,
+        "dryDb": 48
+      },
+      "dimensions": {
+        "widthMm": 645,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 88,
+        "pan": "奥行内寸520mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "ヒートポンプ除湿乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [
+          "ふんわリッチ速乾",
+          "ヒートポンプ除湿乾燥"
+        ],
+        "careHighlights": [
+          "除菌乾燥モード"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ふんわリッチ速乾",
+          "description": "ヒートポンプ除湿乾燥で衣類を乾燥し、仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ヒートポンプ除湿乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "除菌乾燥モード",
+          "description": "乾燥運転を使う対応モードで衣類の除菌を行います。",
+          "groupId": "care"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xm5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xm5/"
+    },
+    "toshiba-tw-127xh5": {
+      "performance": {
+        "washTimeMin": 30,
+        "washDryTimeMin": 87,
+        "washDryEcoTimeMin": 215,
+        "waterL": 80,
+        "washDryWaterL": 61,
+        "energyWh": 70,
+        "washDryEnergyWh": 1330,
+        "washDryEcoEnergyWh": 670,
+        "washDb": 32,
+        "spinDb": 37,
+        "dryDb": 48
+      },
+      "dimensions": {
+        "widthMm": 645,
+        "depthMm": 722,
+        "heightMm": 1060,
+        "massKg": 89,
+        "pan": "奥行内寸520mm以上",
+        "bodyWidthMm": 600
+      },
+      "drying": {
+        "method": "ヒートポンプ除湿乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "温水抗菌ウルトラファインバブル洗浄EX"
+        ],
+        "dryingHighlights": [
+          "ふんわリッチ速乾",
+          "ヒートポンプ除湿乾燥"
+        ],
+        "careHighlights": [
+          "UV温風除菌"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "温水抗菌ウルトラファインバブル洗浄EX",
+          "description": "温水と微細な泡を組み合わせ、汚れや黄ばみに対応する洗浄機能です。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ふんわリッチ速乾",
+          "description": "ヒートポンプ除湿乾燥で衣類を乾燥し、仕上がりに配慮します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ヒートポンプ除湿乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "UV温風除菌",
+          "description": "UVと温風を組み合わせる対応コースで衣類を除菌します。",
+          "groupId": "care"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xh5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-127xh5/"
+    },
+    "toshiba-tw-84gs5": {
+      "performance": {
+        "washTimeMin": 39,
+        "washDryTimeMin": 198,
+        "waterL": 78,
+        "washDryWaterL": 90,
+        "energyWh": 65,
+        "washDryEnergyWh": 1980,
+        "washDb": 32,
+        "spinDb": 42,
+        "dryDb": 44
+      },
+      "dimensions": {
+        "widthMm": 640,
+        "depthMm": 633,
+        "heightMm": 975,
+        "massKg": 71,
+        "pan": "奥行内寸500mm以上",
+        "bodyWidthMm": 599
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "温水抗菌ウルトラファインバブル洗浄W",
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "ドアパッキン洗浄"
+        ],
+        "convenienceHighlights": [
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "温水抗菌ウルトラファインバブル洗浄W",
+          "description": "温水とウルトラファインバブルを使う対応コースで洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "ドアパッキン洗浄",
+          "description": "ドアパッキン部に付着した糸くずなどを洗い流します。",
+          "groupId": "care"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-84gs5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/tw-84gs5/"
+    },
+    "toshiba-aw-12dpb5": {
+      "performance": {
+        "washTimeMin": 38,
+        "waterL": 139,
+        "energyWh": 102,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1098,
+        "massKg": 52,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-12dpb5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-12dpb5/"
+    },
+    "toshiba-aw-10dhb5": {
+      "performance": {
+        "washTimeMin": 32,
+        "waterL": 119,
+        "energyWh": 79,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1033,
+        "massKg": 50,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dhb5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dhb5/"
+    },
+    "toshiba-aw-9dp5": {
+      "performance": {
+        "washTimeMin": 41,
+        "waterL": 111,
+        "energyWh": 99,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 637,
+        "heightMm": 1030,
+        "massKg": 44,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dp5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dp5/"
+    },
+    "toshiba-aw-9dh5": {
+      "performance": {
+        "washTimeMin": 41,
+        "waterL": 107,
+        "energyWh": 96,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 569,
+        "heightMm": 980,
+        "massKg": 41,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dh5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dh5/"
+    },
+    "toshiba-aw-8dh5": {
+      "performance": {
+        "washTimeMin": 39,
+        "waterL": 95,
+        "energyWh": 82,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 569,
+        "heightMm": 980,
+        "massKg": 41,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dh5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dh5/"
+    },
+    "toshiba-aw-8dp5": {
+      "performance": {
+        "washTimeMin": 39,
+        "waterL": 99,
+        "energyWh": 90,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 637,
+        "heightMm": 1030,
+        "massKg": 44,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dp5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dp5/"
+    },
+    "toshiba-aw-7dh5": {
+      "performance": {
+        "washTimeMin": 47,
+        "waterL": 109,
+        "energyWh": 65,
+        "washDb": 34,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 555,
+        "depthMm": 567,
+        "heightMm": 998,
+        "massKg": 35,
+        "pan": "奥行内寸540mm以上",
+        "bodyWidthMm": 515
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-7dh5/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-7dh5/"
+    },
+    "toshiba-aw-12dpb6": {
+      "performance": {
+        "washTimeMin": 38,
+        "waterL": 139,
+        "energyWh": 102,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1098,
+        "massKg": 52,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-12dpb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-12dpb6/"
+    },
+    "toshiba-aw-10dpb6": {
+      "performance": {
+        "washTimeMin": 30,
+        "waterL": 119,
+        "energyWh": 79,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1033,
+        "massKg": 51,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dpb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dpb6/"
+    },
+    "toshiba-aw-10dhb6": {
+      "performance": {
+        "washTimeMin": 32,
+        "waterL": 119,
+        "energyWh": 79,
+        "washDb": 31,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 637,
+        "depthMm": 649,
+        "heightMm": 1033,
+        "massKg": 50,
+        "pan": "奥行内寸550mm以上",
+        "bodyWidthMm": 590
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dhb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-10dhb6/"
+    },
+    "toshiba-aw-8dpb6": {
+      "performance": {
+        "washTimeMin": 33,
+        "waterL": 99,
+        "energyWh": 85,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 621,
+        "heightMm": 1033,
+        "massKg": 45,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dpb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dpb6/"
+    },
+    "toshiba-aw-9dpb6": {
+      "performance": {
+        "washTimeMin": 36,
+        "waterL": 111,
+        "energyWh": 95,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 621,
+        "heightMm": 1033,
+        "massKg": 45,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dpb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dpb6/"
+    },
+    "toshiba-aw-7dh6": {
+      "performance": {
+        "washTimeMin": 39,
+        "waterL": 109,
+        "energyWh": 54,
+        "washDb": 34,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 555,
+        "depthMm": 567,
+        "heightMm": 998,
+        "massKg": 35,
+        "pan": "奥行内寸540mm以上",
+        "bodyWidthMm": 515
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携"
+        ]
+      },
+      "features": [
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-7dh6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-7dh6/"
+    },
+    "toshiba-aw-8dhb6": {
+      "performance": {
+        "washTimeMin": 35,
+        "waterL": 99,
+        "energyWh": 85,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 621,
+        "heightMm": 1033,
+        "massKg": 44,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dhb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dhb6/"
+    },
+    "toshiba-aw-9dhb6": {
+      "performance": {
+        "washTimeMin": 38,
+        "waterL": 111,
+        "energyWh": 95,
+        "washDb": 29,
+        "spinDb": 37
+      },
+      "dimensions": {
+        "widthMm": 600,
+        "depthMm": 621,
+        "heightMm": 1033,
+        "massKg": 44,
+        "pan": "奥行内寸510mm以上",
+        "bodyWidthMm": 555
+      },
+      "drying": {},
+      "specDetails": {
+        "smartphone": "スマートフォン連携",
+        "washHighlights": [
+          "抗菌ウルトラファインバブル洗浄W"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "低振動・低騒音設計",
+          "スマートフォン連携",
+          "ロー＆ビッグ投入口"
+        ]
+      },
+      "features": [
+        {
+          "name": "抗菌ウルトラファインバブル洗浄W",
+          "description": "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。",
+          "groupId": "washing"
+        },
+        {
+          "name": "低振動・低騒音設計",
+          "description": "振動や運転音を抑えることに配慮した設計です。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "スマートフォン連携",
+          "description": "対応アプリから運転状況の確認やコース設定などができます。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ロー＆ビッグ投入口",
+          "description": "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dhb6/spec/",
+      "featureUrl": "https://www.toshiba-lifestyle.com/jp/laundries/aw-9dhb6/"
+    },
+    "hisense-hw-g55xl-w": {
+      "performance": {
+        "waterL": 91,
+        "energyWh": 97,
+        "washDb": 36,
+        "spinDb": 48
+      },
+      "dimensions": {
+        "widthMm": 540,
+        "depthMm": 535,
+        "heightMm": 960,
+        "massKg": 30,
+        "pan": "奥行498mm以上",
+        "bodyWidthMm": 500
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "立体シャワー水流",
+          "激流パルセーター"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "＋機能"
+        ],
+        "drainage": "左右、後、真下 （*注1）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "立体シャワー水流",
+          "description": "タテとヨコの水流を組み合わせて衣類を動かしながら洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "激流パルセーター",
+          "description": "独自形状の回転翼で立体的な水流を生み出します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "＋機能",
+          "description": "選んだコースへ対応する追加機能を組み合わせられます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hw-g55xl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hw-g55xl-w/"
+    },
+    "hisense-hw-g70xl-w": {
+      "performance": {
+        "waterL": 95,
+        "energyWh": 102,
+        "washDb": 36,
+        "spinDb": 48
+      },
+      "dimensions": {
+        "widthMm": 540,
+        "depthMm": 535,
+        "heightMm": 960,
+        "massKg": 30,
+        "pan": "奥行498mm以上",
+        "bodyWidthMm": 500
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "立体シャワー水流",
+          "激流パルセーター"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "銀イオン抗菌"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "＋機能"
+        ],
+        "drainage": "左右、後、真下 （*注1）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "立体シャワー水流",
+          "description": "タテとヨコの水流を組み合わせて衣類を動かしながら洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "激流パルセーター",
+          "description": "独自形状の回転翼で立体的な水流を生み出します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "銀イオン抗菌",
+          "description": "銀イオンを使って衣類や洗濯槽の清潔に配慮します。",
+          "groupId": "care"
+        },
+        {
+          "name": "＋機能",
+          "description": "選んだコースへ対応する追加機能を組み合わせられます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hw-g70xl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hw-g70xl-w/"
+    },
+    "hisense-hw-g55xl-b": {
+      "performance": {
+        "waterL": 91,
+        "energyWh": 97,
+        "washDb": 36,
+        "spinDb": 48
+      },
+      "dimensions": {
+        "widthMm": 540,
+        "depthMm": 535,
+        "heightMm": 960,
+        "massKg": 30,
+        "pan": "奥行498mm以上",
+        "bodyWidthMm": 500
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "立体シャワー水流",
+          "激流パルセーター"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "＋機能"
+        ],
+        "drainage": "左右、後、真下 （*注1）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "立体シャワー水流",
+          "description": "タテとヨコの水流を組み合わせて衣類を動かしながら洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "激流パルセーター",
+          "description": "独自形状の回転翼で立体的な水流を生み出します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "＋機能",
+          "description": "選んだコースへ対応する追加機能を組み合わせられます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hw-g55xl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hw-g55xl-w/"
+    },
+    "hisense-hwf-d120xl-w": {
+      "performance": {
+        "washTimeMin": 29,
+        "washDryTimeMin": 124,
+        "waterL": 72,
+        "washDryWaterL": 60,
+        "energyWh": 40,
+        "washDryEnergyWh": 1085,
+        "washDb": 37,
+        "spinDb": 46,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 635,
+        "depthMm": 630,
+        "heightMm": 1007,
+        "massKg": 87,
+        "pan": "奥行500mm以上 / 幅590mm以上",
+        "bodyWidthMm": 598
+      },
+      "drying": {
+        "method": "ヒートポンプ乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [],
+        "dryingHighlights": [
+          "ヒートポンプ乾燥"
+        ],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ナイトコース"
+        ],
+        "drainage": "左右、真下"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ヒートポンプ乾燥",
+          "description": "ヒートポンプで除湿しながら乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナイトコース",
+          "description": "夜間の使用に配慮した運転コースです。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hwf-d120xl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hwf-d120xl-w/"
+    },
+    "hisense-hwf-d100sl-w": {
+      "performance": {
+        "washTimeMin": 29,
+        "washDryTimeMin": 155,
+        "waterL": 72,
+        "washDryWaterL": 101,
+        "energyWh": 42,
+        "washDryEnergyWh": 2005,
+        "washDb": 37,
+        "spinDb": 46,
+        "dryDb": 46
+      },
+      "dimensions": {
+        "widthMm": 635,
+        "depthMm": 630,
+        "heightMm": 1007,
+        "massKg": 81,
+        "pan": "奥行500mm以上 / 幅590mm以上",
+        "bodyWidthMm": 598
+      },
+      "drying": {
+        "method": "ヒーター式乾燥"
+      },
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [],
+        "dryingHighlights": [
+          "ヒーター式乾燥"
+        ],
+        "careHighlights": [],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "ナイトコース",
+          "＋機能"
+        ],
+        "drainage": "左右、真下"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "ヒーター式乾燥",
+          "description": "ヒーターで温めた風を使って衣類を乾燥します。",
+          "groupId": "drying"
+        },
+        {
+          "name": "ナイトコース",
+          "description": "夜間の使用に配慮した運転コースです。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "＋機能",
+          "description": "選んだコースへ対応する追加機能を組み合わせられます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hwf-d100sl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hwf-d100sl-w/"
+    },
+    "hisense-hw-g70xl-b": {
+      "performance": {
+        "waterL": 95,
+        "energyWh": 102,
+        "washDb": 36,
+        "spinDb": 48
+      },
+      "dimensions": {
+        "widthMm": 540,
+        "depthMm": 535,
+        "heightMm": 960,
+        "massKg": 30,
+        "pan": "奥行498mm以上",
+        "bodyWidthMm": 500
+      },
+      "drying": {},
+      "specDetails": {
+        "autoDosing": "液体洗剤・柔軟剤 自動投入",
+        "washHighlights": [
+          "立体シャワー水流",
+          "激流パルセーター"
+        ],
+        "dryingHighlights": [],
+        "careHighlights": [
+          "銀イオン抗菌"
+        ],
+        "convenienceHighlights": [
+          "液体洗剤・柔軟剤 自動投入",
+          "＋機能"
+        ],
+        "drainage": "左右、後、真下 （*注1）"
+      },
+      "features": [
+        {
+          "name": "液体洗剤・柔軟剤 自動投入",
+          "description": "液体洗剤と柔軟剤を自動で計量・投入します。",
+          "groupId": "convenience"
+        },
+        {
+          "name": "立体シャワー水流",
+          "description": "タテとヨコの水流を組み合わせて衣類を動かしながら洗います。",
+          "groupId": "washing"
+        },
+        {
+          "name": "激流パルセーター",
+          "description": "独自形状の回転翼で立体的な水流を生み出します。",
+          "groupId": "washing"
+        },
+        {
+          "name": "銀イオン抗菌",
+          "description": "銀イオンを使って衣類や洗濯槽の清潔に配慮します。",
+          "groupId": "care"
+        },
+        {
+          "name": "＋機能",
+          "description": "選んだコースへ対応する追加機能を組み合わせられます。",
+          "groupId": "convenience"
+        }
+      ],
+      "officialUrl": "https://www.hisense.co.jp/washer/hw-g70xl-w/d1.php",
+      "featureUrl": "https://www.hisense.co.jp/washer/hw-g70xl-w/"
+    }
+  },
+  "failures": []
+}

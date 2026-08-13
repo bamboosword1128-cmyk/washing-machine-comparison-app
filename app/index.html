@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ノジマ店頭スタッフ向け、2025・2026年発売の洗濯機説明・比較ナビ" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>洗濯機説明ナビ 2025–2026</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#results">機種一覧へ移動</a>
+
+    <header class="topbar">
+      <div class="brand-block">
+        <p id="appKicker" class="eyebrow">ノジマ店頭スタッフ向け</p>
+        <h1 id="appTitle">洗濯機説明ナビ 2025–2026</h1>
+        <p class="update-line">データ基準日 <time id="updatedAt">2026-08-12</time></p>
+      </div>
+      <div class="summary" aria-label="掲載件数">
+        <div><strong id="makerCount">5</strong><span>メーカー</span></div>
+        <div><strong id="productCount">0</strong><span>機種</span></div>
+        <div><strong id="visibleCount">0</strong><span>表示中</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="introTitle">
+        <div>
+          <p class="eyebrow">メーカー公式情報で売り分け</p>
+          <h2 id="introTitle">お客様の使い方と設置条件から候補を絞り込む</h2>
+          <p>2025・2026年に国内発売された5社の縦型・ドラム式を収録。公式に確認できない数値は空欄にしています。</p>
+        </div>
+        <div class="preset-box">
+          <span>代表機を一括比較</span>
+          <button type="button" data-preset="drum-representatives">ドラム代表4機</button>
+          <button type="button" data-preset="top-representatives">縦型代表4機</button>
+        </div>
+      </section>
+
+      <section class="workbench">
+        <aside id="filters" class="filters" aria-label="機種の絞り込み">
+          <div class="filter-heading">
+            <div><p class="eyebrow">検索条件</p><h2>絞り込み</h2></div>
+            <button id="clearFilters" class="text-button" type="button">すべて解除</button>
+          </div>
+
+          <label class="search-field">
+            <span>キーワード</span>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="型番・メーカー・機能・用途で検索" />
+          </label>
+
+          <fieldset><legend>メーカー</legend><div id="makerFilters" class="chip-list"></div></fieldset>
+          <fieldset><legend>発売年</legend><div id="yearFilters" class="chip-list"></div></fieldset>
+          <fieldset><legend>タイプ</legend><div id="typeFilters" class="chip-list stack"></div></fieldset>
+          <fieldset><legend>洗濯容量</legend><div id="capacityFilters" class="chip-list"></div></fieldset>
+          <fieldset><legend>乾燥容量</legend><div id="dryCapacityFilters" class="chip-list"></div></fieldset>
+          <fieldset><legend>乾燥方式</legend><div id="dryingMethodFilters" class="chip-list stack"></div></fieldset>
+          <fieldset><legend>よく使う条件</legend><div id="quickFilters" class="chip-list stack"></div></fieldset>
+
+          <div class="sales-note"><strong>成約前の確認</strong><p id="salesNote"></p></div>
+        </aside>
+
+        <section id="results" class="results" aria-labelledby="resultTitle">
+          <div class="section-heading">
+            <div><p class="eyebrow">機種一覧</p><h2 id="resultTitle">全機種</h2></div>
+            <span id="activeFilterSummary" class="filter-summary">条件なし</span>
+          </div>
+          <p id="resultsStatus" class="sr-only" role="status" aria-live="polite"></p>
+          <div id="productGrid" class="product-grid"></div>
+        </section>
+      </section>
+
+      <section id="compare" class="compare-section" aria-labelledby="compareTitle">
+        <div class="section-heading inverse">
+          <div><p class="eyebrow">最大4機種</p><h2 id="compareTitle">比較リスト</h2></div>
+          <button id="clearCompare" class="light-button" type="button">比較をすべて解除</button>
+        </div>
+        <p id="compareStatus" class="compare-message" role="status" aria-live="polite"></p>
+        <div id="compareEmpty" class="compare-empty">機種カードの「比較に追加」から、最大4機種を横並びにできます。</div>
+        <div id="compareContent" hidden>
+          <div class="compare-tools">
+            <label class="difference-toggle" for="differenceOnly">
+              <input id="differenceOnly" type="checkbox" />
+              <span aria-hidden="true"></span>
+              差分のみ表示
+            </label>
+            <small id="differenceModeHint">同じ値は薄く、異なる値は強調します。</small>
+          </div>
+          <section id="differenceSummary" class="difference-summary" aria-labelledby="differenceSummaryTitle"></section>
+          <div id="compareWrap" class="compare-wrap" tabindex="0" aria-label="選択した洗濯機の比較表"></div>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="guideTitle">
+        <div class="section-heading"><div><p class="eyebrow">メーカー別</p><h2 id="guideTitle">売り分け早見</h2></div></div>
+        <div id="makerGuide" class="maker-guide"></div>
+      </section>
+    </main>
+
+    <button id="compareFab" class="compare-fab" type="button" aria-label="比較リストへ移動">比較 <strong data-compare-count>0</strong></button>
+
+    <nav class="mobile-nav" aria-label="画面内移動">
+      <a href="#filters">条件</a><a href="#results">一覧 <span id="mobileVisible">0</span></a><a href="#compare">比較 <span data-compare-count>0</span></a>
+    </nav>
+
+    <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" data-close-dialog aria-label="詳細を閉じる">×</button>
+        <div id="detailContent"></div>
+      </div>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
