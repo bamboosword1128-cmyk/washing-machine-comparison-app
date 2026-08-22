@@ -24,7 +24,7 @@ window.APPLIANCE_DATA = {
       "id": "hitachi",
       "name": "日立",
       "shortName": "HITACHI",
-      "accent": "#d71920",
+      "accent": "#1f5aa6",
       "logo": "assets/logos/hitachi.png",
       "guide": "ドラムは容量とお手入れ機能、縦型は洗濯乾燥の有無と容量差を先に確認すると整理しやすい構成です。"
     },

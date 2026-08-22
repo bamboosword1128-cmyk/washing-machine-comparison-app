@@ -60,7 +60,7 @@ const sources = [
 
 const makers = [
   { id: "panasonic", name: "Panasonic", shortName: "Panasonic", accent: "#0c7f8c", logo: "assets/logos/panasonic.png", guide: "ドラムはヒートポンプ乾燥のLXとコンパクトなSD、縦型は容量・投入口・自動投入の有無を軸に案内します。" },
-  { id: "hitachi", name: "日立", shortName: "HITACHI", accent: "#d71920", logo: "assets/logos/hitachi.png", guide: "ドラムは容量とお手入れ機能、縦型は洗濯乾燥の有無と容量差を先に確認すると整理しやすい構成です。" },
+  { id: "hitachi", name: "日立", shortName: "HITACHI", accent: "#1f5aa6", logo: "assets/logos/hitachi.png", guide: "ドラムは容量とお手入れ機能、縦型は洗濯乾燥の有無と容量差を先に確認すると整理しやすい構成です。" },
   { id: "sharp", name: "シャープ", shortName: "SHARP", accent: "#d71920", logo: "assets/logos/sharp.png", guide: "縦型は穴なし槽、ドラムは乾燥方式と本体サイズを中心に、設置条件まで一緒に確認します。" },
   { id: "toshiba", name: "東芝", shortName: "TOSHIBA", accent: "#e31b23", logo: "assets/logos/toshiba.png", guide: "抗菌ウルトラファインバブル洗浄の搭載範囲と、容量・投入口・低振動性を用途に合わせて案内します。" },
   { id: "hisense", name: "Hisense", shortName: "Hisense", accent: "#00a6a6", logo: "assets/logos/hisense.png", guide: "必要容量と本体サイズを先に確認し、ドラムは乾燥方式の違い、縦型はシンプルな操作性を説明します。" }
