@@ -2,7 +2,9 @@
 
 ノジマ店頭スタッフ向けの静的Webアプリです。このフォルダだけで起動・公開できます。
 
-公開URL: https://bamboosword1128-cmyk.github.io/washing-machine-comparison-app/
+公開URL（Netlify）: https://washing-machine-comparison-app.netlify.app/
+
+GitHub Pages: https://bamboosword1128-cmyk.github.io/washing-machine-comparison-app/
 
 ## 主な機能
 
@@ -41,7 +43,9 @@ node scripts/check-source-links.mjs
 
 ## Netlify
 
-このフォルダを新しいNetlifyサイトのベースディレクトリに指定します。`netlify.toml` により `app/` が公開対象になります。実際の公開操作は行っていません。
+GitHubの `main` ブランチとNetlifyサイトを連携済みです。`main` へプッシュすると自動デプロイされ、`netlify.toml` により `app/` が公開対象になります。
+
+公開URL: https://washing-machine-comparison-app.netlify.app/
 
 ## GitHub Pages
 
