@@ -260,6 +260,7 @@ main {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -269,8 +270,12 @@ main {
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.25;
-  text-align: left;
+  text-align: center;
   touch-action: manipulation;
+}
+
+.filter-chip span:empty {
+  display: none;
 }
 
 .filter-chip span {
