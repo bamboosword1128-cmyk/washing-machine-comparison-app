@@ -8,7 +8,9 @@ import vm from "node:vm";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, "..");
 const DATA_FILE = resolve(ROOT, "app/data.js");
-const ALLOWED_YEARS = new Set([2025, 2026]);
+const REQUESTED_MODELS_FILE = resolve(HERE, "data/requested-models-2026-08-15.json");
+const ENRICHMENT_FILE = resolve(HERE, "data/official-enrichment.json");
+const ALLOWED_YEARS = new Set([2022, 2023, 2024, 2025, 2026]);
 const ALLOWED_HOSTS = [
   "panasonic.jp",
   "news.panasonic.com",
@@ -16,6 +18,7 @@ const ALLOWED_HOSTS = [
   "www.hitachi.co.jp",
   "jp.sharp",
   "cgi.jp.sharp",
+  "corporate.jp.sharp",
   "www.toshiba-lifestyle.com",
   "www.hisense.co.jp",
   "web.archive.org"
@@ -61,10 +64,16 @@ for (const product of data.products || []) {
   if (!ALLOWED_YEARS.has(product.modelYear)) error(`${path}: 対象外の発売年 ${product.modelYear}`);
   if (!product.releaseLabel || /予定|未発売/.test(product.releaseLabel)) error(`${path}: 発売済みとして扱えない releaseLabel です`);
   if (!Array.isArray(product.models) || !product.models.length) error(`${path}: models が空です`);
-  if (!product.capacities || typeof product.capacities.washingKg !== "number" || product.capacities.washingKg <= 0) error(`${path}: 洗濯容量が数値でありません`);
+  if (!product.capacities) error(`${path}: capacities がありません`);
+  if (product.type === "ultrasonic-washer") {
+    if (product.capacities?.washingKg != null) error(`${path}: 超音波ウォッシャーに洗濯容量が設定されています`);
+    if (!product.capacityNote) error(`${path}: 超音波ウォッシャーに用途説明がありません`);
+  } else if (typeof product.capacities?.washingKg !== "number" || product.capacities.washingKg <= 0) {
+    error(`${path}: 洗濯容量が数値でありません`);
+  }
   if (product.capacities?.dryingKg != null && (typeof product.capacities.dryingKg !== "number" || product.capacities.dryingKg <= 0)) error(`${path}: 乾燥容量が不正です`);
   if (product.type.includes("washer-dryer") && product.capacities?.dryingKg == null) error(`${path}: 洗濯乾燥機に乾燥容量がありません`);
-  if (!product.type.includes("washer-dryer") && product.capacities?.dryingKg != null) error(`${path}: 全自動洗濯機に乾燥容量が設定されています`);
+  if (!product.type.includes("washer-dryer") && product.capacities?.dryingKg != null) error(`${path}: 乾燥非搭載製品に乾燥容量が設定されています`);
   if (!Array.isArray(product.sourceIds) || !product.sourceIds.length) error(`${path}: 情報源がありません`);
   if (!product.differenceSummary) error(`${path}: 違いの要点がありません`);
   for (const sourceId of product.sourceIds || []) if (!sourceIds.has(sourceId)) error(`${path}: 情報源 ${sourceId} が未定義です`);
@@ -78,10 +87,15 @@ for (const product of data.products || []) {
     if (!Array.isArray(feature.sourceIds) || !feature.sourceIds.length) error(`${path}: 機能 ${feature.name} に情報源がありません`);
     for (const sourceId of feature.sourceIds || []) if (!sourceIds.has(sourceId)) error(`${path}: 機能 ${feature.name} の情報源 ${sourceId} が未定義です`);
   }
+  for (const item of product.additionalSpecs || []) {
+    if (!item?.label || !item?.value) error(`${path}: additionalSpecs は label と value が必要です`);
+  }
   for (const [key, value] of Object.entries(product.performance || {})) {
     if (key === "noise") continue;
     if (value != null && typeof value !== "number") error(`${path}: performance.${key} は単位を含まない数値またはnullにしてください`);
   }
+  if (product.performance?.waterL != null && (product.performance.waterL < 20 || product.performance.waterL > 500)) error(`${path}: 標準使用水量 ${product.performance.waterL}L が想定範囲外です`);
+  if (product.performance?.washTimeMin != null && (product.performance.washTimeMin < 1 || product.performance.washTimeMin > 1000)) error(`${path}: 洗濯時間 ${product.performance.washTimeMin}分 が想定範囲外です`);
   for (const [key, value] of Object.entries(product.performance?.noise || {})) {
     if (value != null && typeof value !== "number") error(`${path}: performance.noise.${key} は数値またはnullにしてください`);
   }
@@ -89,6 +103,28 @@ for (const product of data.products || []) {
     if (key === "pan" || key === "doorDirection") continue;
     if (value != null && typeof value !== "number") error(`${path}: dimensions.${key} は単位を含まない数値またはnullにしてください`);
   }
+}
+
+if (!existsSync(ENRICHMENT_FILE)) {
+  error("公式仕様補完データがありません");
+} else {
+  const enrichment = JSON.parse(readFileSync(ENRICHMENT_FILE, "utf8"));
+  if (enrichment.failures?.length) error(`公式仕様取得に失敗があります: ${enrichment.failures.join(" / ")}`);
+  const missingEnrichment = (data.products || []).filter((product) => !enrichment.products?.[product.id]).map((product) => product.name);
+  if (missingEnrichment.length) error(`公式仕様補完データがない機種: ${missingEnrichment.join(", ")}`);
+}
+
+if (!existsSync(REQUESTED_MODELS_FILE)) {
+  error("追加画像の型番台帳がありません");
+} else {
+  const requested = JSON.parse(readFileSync(REQUESTED_MODELS_FILE, "utf8")).models || [];
+  const normalizeModel = (value) => String(value || "").normalize("NFKC").toUpperCase().replace(/[^A-Z0-9]/g, "");
+  const searchableModels = new Set((data.products || []).flatMap((product) => [product.name, ...(product.models || [])]).map(normalizeModel));
+  const duplicateRequested = duplicateValues(requested.map(normalizeModel));
+  if (duplicateRequested.length) error(`追加画像の型番台帳に重複があります: ${duplicateRequested.join(", ")}`);
+  const missingRequested = requested.filter((model) => !searchableModels.has(normalizeModel(model)));
+  if (missingRequested.length) error(`追加画像の未収録型番: ${missingRequested.join(", ")}`);
+  if (requested.length !== 101) error(`追加画像の型番件数は101件を想定していますが${requested.length}件です`);
 }
 
 for (const source of data.sources || []) {

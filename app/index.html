@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ノジマ店頭スタッフ向け、2025・2026年発売の洗濯機説明・比較ナビ" />
-    <meta name="theme-color" content="#0f766e" />
+    <meta name="description" content="ノジマ店頭スタッフ向け、指定型番を含む2022〜2026年発売の洗濯機説明・比較ナビ" />
+    <meta name="theme-color" content="#f7f4ef" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <title>洗濯機説明ナビ 2025–2026</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>洗濯機説明ナビ 2022–2026</title>
+    <link rel="stylesheet" href="styles.css?v=feature-help-1" />
   </head>
   <body>
-    <a class="skip-link" href="#results">機種一覧へ移動</a>
+    <nav class="skip-links" aria-label="スキップリンク">
+      <a href="#filters">絞り込み条件へ</a>
+      <a href="#results">機種一覧へ</a>
+      <a href="#compare">比較リストへ</a>
+    </nav>
 
     <header class="topbar">
       <div class="brand-block">
         <p id="appKicker" class="eyebrow">ノジマ店頭スタッフ向け</p>
-        <h1 id="appTitle">洗濯機説明ナビ 2025–2026</h1>
-        <p class="update-line">データ基準日 <time id="updatedAt">2026-08-12</time></p>
+        <h1 id="appTitle">洗濯機説明ナビ 2022–2026</h1>
+        <p class="update-line">データ基準日 <time id="updatedAt">2026-08-22</time></p>
       </div>
       <div class="summary" aria-label="掲載件数">
         <div><strong id="makerCount">5</strong><span>メーカー</span></div>
@@ -26,26 +30,8 @@
     </header>
 
     <main>
-      <section class="intro" aria-labelledby="introTitle">
-        <div>
-          <p class="eyebrow">メーカー公式情報で売り分け</p>
-          <h2 id="introTitle">お客様の使い方と設置条件から候補を絞り込む</h2>
-          <p>2025・2026年に国内発売された5社の縦型・ドラム式を収録。公式に確認できない数値は空欄にしています。</p>
-        </div>
-        <div class="preset-box">
-          <span>代表機を一括比較</span>
-          <button type="button" data-preset="drum-representatives">ドラム代表4機</button>
-          <button type="button" data-preset="top-representatives">縦型代表4機</button>
-        </div>
-      </section>
-
       <section class="workbench">
-        <aside id="filters" class="filters" aria-label="機種の絞り込み">
-          <div class="filter-heading">
-            <div><p class="eyebrow">検索条件</p><h2>絞り込み</h2></div>
-            <button id="clearFilters" class="text-button" type="button">すべて解除</button>
-          </div>
-
+        <aside id="filters" class="filters skip-target" aria-label="機種の絞り込み" tabindex="-1">
           <label class="search-field">
             <span>キーワード</span>
             <input id="searchInput" type="search" autocomplete="off" placeholder="型番・メーカー・機能・用途で検索" />
@@ -62,20 +48,30 @@
           <div class="sales-note"><strong>成約前の確認</strong><p id="salesNote"></p></div>
         </aside>
 
-        <section id="results" class="results" aria-labelledby="resultTitle">
+        <section id="results" class="results skip-target" aria-labelledby="resultTitle" tabindex="-1">
           <div class="section-heading">
             <div><p class="eyebrow">機種一覧</p><h2 id="resultTitle">全機種</h2></div>
-            <span id="activeFilterSummary" class="filter-summary">条件なし</span>
+            <div class="result-actions">
+              <span id="activeFilterSummary" class="filter-summary">条件なし</span>
+              <button id="clearFilters" class="ghost-button" type="button">条件クリア</button>
+            </div>
           </div>
           <p id="resultsStatus" class="sr-only" role="status" aria-live="polite"></p>
           <div id="productGrid" class="product-grid"></div>
         </section>
       </section>
 
-      <section id="compare" class="compare-section" aria-labelledby="compareTitle">
-        <div class="section-heading inverse">
-          <div><p class="eyebrow">最大4機種</p><h2 id="compareTitle">比較リスト</h2></div>
-          <button id="clearCompare" class="light-button" type="button">比較をすべて解除</button>
+      <section id="compare" class="compare-section skip-target" aria-labelledby="compareTitle" tabindex="-1">
+        <div class="section-heading">
+          <div><p class="eyebrow">接客比較</p><h2 id="compareTitle">比較リスト</h2></div>
+          <button id="clearCompare" class="ghost-button" type="button">比較を空にする</button>
+        </div>
+        <div class="compare-presets" aria-label="代表機の一括比較">
+          <span>一括置き換え</span>
+          <div class="preset-box">
+            <button type="button" data-preset="drum-representatives">ドラム代表 <small>4機種</small></button>
+            <button type="button" data-preset="top-representatives">縦型代表 <small>4機種</small></button>
+          </div>
         </div>
         <p id="compareStatus" class="compare-message" role="status" aria-live="polite"></p>
         <div id="compareEmpty" class="compare-empty">機種カードの「比較に追加」から、最大4機種を横並びにできます。</div>
@@ -113,6 +109,6 @@
     </dialog>
 
     <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=feature-help-1"></script>
   </body>
 </html>

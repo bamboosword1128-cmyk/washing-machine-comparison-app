@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
@@ -69,6 +69,8 @@ const FEATURE_DEFINITIONS = {
     ["温水抗菌ウルトラファインバブル洗浄EX", /温水抗菌ウルトラファインバブル洗浄EX/, "washing", "温水と微細な泡を組み合わせ、汚れや黄ばみに対応する洗浄機能です。"],
     ["温水抗菌ウルトラファインバブル洗浄W", /温水抗菌ウルトラファインバブル洗浄W/, "washing", "温水とウルトラファインバブルを使う対応コースで洗います。"],
     ["抗菌ウルトラファインバブル洗浄W", /抗菌ウルトラファインバブル洗浄W/, "washing", "微細な泡を含む水で洗剤の洗浄成分を繊維へ届けます。"],
+    ["パワフル洗浄", /パワフル洗浄/, "washing", "循環水流で洗剤液を衣類へ浸透させて洗います。"],
+    ["Wシャワー洗浄", /Wシャワー洗浄/, "washing", "2本のシャワーで洗浄液を衣類全体へ浸透させて洗います。"],
     ["Ag+抗菌水", /Ag\+抗菌水/, "care", "抗菌成分を含む水で洗濯物をすすぎます。"],
     ["ふんわリッチ速乾", /ふんわリッチ速乾/, "drying", "ヒートポンプ除湿乾燥で衣類を乾燥し、仕上がりに配慮します。"],
     ["ヒートポンプ除湿乾燥", /ヒートポンプ除湿乾燥/, "drying", "ヒートポンプで除湿しながら乾燥します。"],
@@ -76,7 +78,7 @@ const FEATURE_DEFINITIONS = {
     ["除菌乾燥モード", /除菌乾燥モード/, "care", "乾燥運転を使う対応モードで衣類の除菌を行います。"],
     ["ドアパッキン洗浄", /ドアパッキン洗浄/, "care", "ドアパッキン部に付着した糸くずなどを洗い流します。"],
     ["低振動・低騒音設計", /低振動・低騒音設計/, "convenience", "振動や運転音を抑えることに配慮した設計です。"],
-    ["スマートフォン連携", /スマートフォン連携|IoLIFE/, "convenience", "対応アプリから運転状況の確認やコース設定などができます。"],
+    ["スマートフォン連携", /スマートフォン連携(?:（アプリ対応）|\(アプリ対応\))?/, "convenience", "対応アプリから運転状況の確認やコース設定などができます。"],
     ["ロー＆ビッグ投入口", /ロー[＆&]ビッグ投入口/, "convenience", "投入口を広く、槽の底を浅くして衣類を出し入れしやすくした設計です。"]
   ],
   hisense: [
@@ -138,10 +140,12 @@ function captureString(text, pattern, group = 1) {
   return match ? compact(match[group]) : "";
 }
 
-function trimProductText(text, makerId) {
+function trimProductText(text, makerId, productName = "") {
   let scoped = text;
   if (makerId === "toshiba") {
-    const start = text.search(/洗濯機・洗濯乾燥機\s+メニュー/);
+    const menuStart = text.search(/洗濯機・洗濯乾燥機\s+メニュー/);
+    const productStart = productName ? text.indexOf(productName, Math.max(0, menuStart)) : -1;
+    const start = productStart >= 0 ? productStart : menuStart;
     if (start >= 0) scoped = text.slice(start);
   }
   return scoped.split(/関連商品/)[0];
@@ -173,13 +177,15 @@ function officialSpecSource(product) {
 function featurePageUrl(product) {
   if (product.makerId === "panasonic") return `https://panasonic.jp/wash/products/${product.models[0]}.html`;
   if (product.makerId === "hitachi" && product.name !== "NW-R706") return `https://kadenfan.hitachi.co.jp/wash/lineup/${product.name.toLowerCase()}/`;
+  if (product.name === "UW-X1") return "https://jp.sharp/sentaku/uw/products/uwx1/";
   if (product.makerId === "sharp") return `https://jp.sharp/sentaku/products/${product.name.toLowerCase().replaceAll("-", "")}/`;
   if (product.makerId === "toshiba") {
     const sharedPage = {
       "AW-8DP5": "aw-9dp5",
       "AW-8DH5": "aw-9dh5",
       "AW-8DPB6": "aw-9dpb6",
-      "AW-8DHB6": "aw-9dhb6"
+      "AW-8DHB6": "aw-9dhb6",
+      "AW-5GA4": "aw-6ga4"
     }[product.name] || product.name.toLowerCase();
     return `https://www.toshiba-lifestyle.com/jp/laundries/${sharedPage}/`;
   }
@@ -253,11 +259,11 @@ function parseSharp(text, features) {
   return {
     performance: {
       washTimeMin: capture(text, /目安時間（50\/60Hz）\s*洗濯\s*約?\s*([0-9,]+)分/),
-      washDryTimeMin: capture(text, /目安時間（50\/60Hz）[\s\S]{0,120}?洗濯[〜～]乾燥\s*約?\s*([0-9,]+)分/),
-      waterL: capture(text, /標準使用水量(?:（[^）]*）)?\s*洗濯\s*([0-9,]+)L/),
-      washDryWaterL: capture(text, /標準使用水量[\s\S]{0,120}?洗濯[〜～]乾燥\s*([0-9,]+)L/),
+      washDryTimeMin: capture(text, /目安時間（50\/60Hz）[\s\S]{0,140}?洗濯\s*[〜～]\s*乾燥\s*約?\s*([0-9,]+)分/),
+      waterL: capture(text, /標準使用水量(?:（[^）]*）)?[\s\S]{0,100}?洗濯(?!\s*[〜～])\s*([0-9,]+)L/),
+      washDryWaterL: capture(text, /標準使用水量[\s\S]{0,140}?洗濯\s*[〜～]\s*乾燥\s*([0-9,]+)L/),
       energyWh: capture(text, /消費電力量（50\/60Hz）\s*洗濯\s*([0-9,]+)Wh/),
-      washDryEnergyWh: capture(text, /消費電力量（50\/60Hz）[\s\S]{0,120}?洗濯[〜～]乾燥\s*([0-9,]+)Wh/),
+      washDryEnergyWh: capture(text, /消費電力量（50\/60Hz）[\s\S]{0,140}?洗濯\s*[〜～]\s*乾燥\s*([0-9,]+)Wh/),
       washDb: noise ? number(noise[1]) : null,
       spinDb: noise ? number(noise[2]) : null,
       dryDb: noise ? number(noise[3]) : null
@@ -266,7 +272,7 @@ function parseSharp(text, features) {
       widthMm: dimensions ? number(dimensions[1]) : null,
       depthMm: dimensions ? number(dimensions[2]) : null,
       heightMm: dimensions ? number(dimensions[3]) : null,
-      massKg: capture(text, /質量\s*約?\s*([0-9,.]+)kg/),
+      massKg: capture(text, /質量\s*約?\s*([0-9,.]+)(?:kg|㎏)/),
       pan: captureString(text, /設置可能な防水パン（内寸奥行）\s*([^\n]{1,50})/),
       bodyWidthMm: capture(text, /ボディ幅\s*([0-9,]+)mm/),
       doorDirection: /左開き[\s\S]{0,100}?右開き|右開き[\s\S]{0,100}?左開き/.test(text) ? "左開き / 右開き" : /左開き/.test(text) ? "左開き" : /右開き/.test(text) ? "右開き" : ""
@@ -287,14 +293,17 @@ function valuesBetween(text, startLabel, endLabel, pattern) {
 function parseToshiba(text, features, product) {
   const dimensions = text.match(/総外形寸法\/質量[\s\S]{0,120}?([0-9,]+)\s*×\s*([0-9,]+)\s*×\s*([0-9,]+)mm\s*\/?\s*約?\s*([0-9,.]+)kg/);
   const noise = text.match(/運転音\s*洗い\s*約?\s*([0-9,]+)dB\s*\/\s*脱水\s*約?\s*([0-9,]+)dB(?:\s*\/\s*乾燥\s*約?\s*([0-9,]+)dB)?/);
+  const dualEnergy = text.match(/消費電力量[\s\S]{0,50}?約?\s*([0-9,]+)\s*\/\s*([0-9,]+)Wh/);
   const result = {
     performance: {
       washTimeMin: capture(text, /目安時間\s*洗濯時\s*約?\s*([0-9,]+)分/),
       washDryTimeMin: capture(text, /洗濯[～〜]乾燥時\s*約?\s*([0-9,]+)分/),
       washDryEcoTimeMin: capture(text, /洗濯[～〜]乾燥時（乾燥節電）\s*約?\s*([0-9,]+)分/),
-      waterL: capture(text, /標準使用水量\s*洗濯時\s*約?\s*([0-9,]+)L/),
+      waterL: capture(text, /標準使用水量[\s\S]{0,80}?([0-9]{2,3})L/),
       washDryWaterL: capture(text, /標準使用水量[\s\S]{0,100}?洗濯[～〜]乾燥時\s*約?\s*([0-9,]+)L/),
-      energyWh: capture(text, /消費電力量\s*洗濯時\s*約?\s*([0-9,]+)Wh/),
+      energyWh: dualEnergy ? null : capture(text, /消費電力量\s*(?:洗濯時\s*)?約?\s*([0-9,]+)Wh/),
+      energyWh50Hz: dualEnergy ? number(dualEnergy[1]) : null,
+      energyWh60Hz: dualEnergy ? number(dualEnergy[2]) : null,
       washDryEnergyWh: capture(text, /消費電力量[\s\S]{0,120}?洗濯[～〜]乾燥時\s*約?\s*([0-9,]+)Wh/),
       washDryEcoEnergyWh: capture(text, /洗濯[～〜]乾燥時（乾燥節電）\s*約?\s*([0-9,]+)Wh/),
       washDb: noise ? number(noise[1]) : null,
@@ -314,7 +323,7 @@ function parseToshiba(text, features, product) {
   };
 
   // 東芝の一部縦型は9kg/8kgを同じ仕様表に掲載しているため、2列目の値を明示的に選ぶ。
-  const secondColumnModels = new Set(["AW-8DP5", "AW-8DH5", "AW-8DPB6", "AW-8DHB6"]);
+  const secondColumnModels = new Set(["AW-8DP5", "AW-8DH5", "AW-8DPB6", "AW-8DHB6", "AW-5GA4"]);
   if (secondColumnModels.has(product?.name)) {
     const times = valuesBetween(text, "目安時間", "標準使用水量", /約?\s*([0-9,]+)分/g);
     const waters = valuesBetween(text, "標準使用水量", "消費電力", /約?\s*([0-9,]+)L/g);
@@ -372,20 +381,23 @@ function parseHitachi(json) {
   const energy = hitachiValue(json, "消費電力量");
   const water = hitachiValue(json, "標準使用水量");
   const noiseText = hitachiValue(json, "運転音");
-  const noise = noiseText.match(/([0-9,]+)\s*[／/]\s*([0-9,]+)\s*[／/]\s*([0-9,]+)/);
+  const noise = noiseText.match(/([0-9,]+)\s*[／/]\s*([0-9,]+)(?:\s*[／/]\s*([0-9,]+))?/);
   const dimensionsText = hitachiValue(json, "外形寸法");
   const dimensions = dimensionsText.match(/幅\s*([0-9,]+)mm.*?奥行\s*([0-9,]+)mm.*?高さ\s*([0-9,]+)mm/);
-  const relevantText = compact(json.dataArray.filter((section) => !["pdcAnnotation", "pdcParts"].includes(section.domId)).flatMap((section) => section.data || []).map((row) => `${htmlToText(row.column)} ${htmlToText(row.value)}`).join(" "));
+  const relevantText = compact(json.dataArray.filter((section) => !["pdcAnnotation", "pdcParts"].includes(section.domId)).flatMap((section) => section.data || []).map((row) => {
+    const value = compact(htmlToText(row.value));
+    return /^[ー―－-]$/.test(value) ? "" : `${htmlToText(row.column)} ${value}`;
+  }).join(" "));
   const features = getFeatures("hitachi", relevantText);
   return {
     performance: {
-      washTimeMin: capture(time, /洗濯（標準コース）\s*([0-9,]+)分/),
-      washDryTimeMin: capture(time, /洗濯[～〜]乾燥（標準コース）\s*約?\s*([0-9,]+)分/),
+      washTimeMin: capture(time, /洗濯(?:（標準コース）)?\s*([0-9,]+)分/),
+      washDryTimeMin: capture(time, /洗濯[～〜]乾燥(?:（標準コース）)?\s*約?\s*([0-9,]+)分/),
       washDryEcoTimeMin: capture(time, /洗濯[～〜]乾燥（省エネコース）\s*約?\s*([0-9,]+)分/),
-      waterL: capture(water, /洗濯\s*([0-9,]+)L/),
-      washDryWaterL: capture(water, /洗濯[～〜]乾燥\s*約?\s*([0-9,]+)L/),
-      energyWh: capture(energy, /洗濯（標準コース）\s*([0-9,]+)Wh/),
-      washDryEnergyWh: capture(energy, /洗濯[～〜]乾燥（標準コース）\s*約?\s*([0-9,]+)Wh/),
+      waterL: capture(water, /洗濯(?:（標準コース）)?\s*([0-9,]+)L/),
+      washDryWaterL: capture(water, /洗濯[～〜]乾燥(?:（標準コース）)?\s*約?\s*([0-9,]+)L/),
+      energyWh: capture(energy, /洗濯(?:（標準コース）)?\s*([0-9,]+)Wh/),
+      washDryEnergyWh: capture(energy, /洗濯[～〜]乾燥(?:（標準コース）)?\s*約?\s*([0-9,]+)Wh/),
       washDryEcoEnergyWh: capture(energy, /洗濯[～〜]乾燥（省エネコース）\s*約?\s*([0-9,]+)Wh/),
       washDb: noise ? number(noise[1]) : null,
       spinDb: noise ? number(noise[2]) : null,
@@ -424,6 +436,17 @@ async function researchProduct(product) {
   const specSource = officialSpecSource(product);
   if (!specSource) throw new Error("公式仕様URLが未定義");
 
+  if (product.name === "UW-X1") {
+    await fetchText(specSource.url);
+    return {
+      dimensions: { widthMm: 40, depthMm: 40, heightMm: 168 },
+      features: [{ name: "毎秒約38,000回の超音波振動", description: "水を含んだ繊維の隙間に発生する泡の力で、部分汚れを落とします。", groupId: "washing" }],
+      specDetails: { washHighlights: ["毎秒約38,000回の超音波振動"], dryingHighlights: [], careHighlights: [], convenienceHighlights: ["約5時間充電・約15分使用"] },
+      officialUrl: specSource.url,
+      featureUrl: featurePageUrl(product)
+    };
+  }
+
   if (product.makerId === "hitachi" && product.name !== "NW-R706") {
     const jsonUrl = `https://kadenfan.hitachi.co.jp/wash/common/json/${product.name.toLowerCase()}.json`;
     const json = JSON.parse(await fetchText(jsonUrl));
@@ -444,8 +467,8 @@ async function researchProduct(product) {
     fetchText(specSource.url),
     featurePageUrl(product) ? fetchText(featurePageUrl(product)) : Promise.resolve("")
   ]);
-  const specText = trimProductText(htmlToText(specHtml), product.makerId);
-  const featureText = trimProductText(htmlToText(featureHtml), product.makerId);
+  const specText = trimProductText(htmlToText(specHtml), product.makerId, product.name);
+  const featureText = trimProductText(htmlToText(featureHtml), product.makerId, product.name);
   const combined = `${specText}\n${featureText}`;
   const features = dedupeFeatures(getFeatures(product.makerId, combined));
   const parser = { panasonic: parsePanasonic, sharp: parseSharp, toshiba: parseToshiba, hisense: parseHisense }[product.makerId];
@@ -453,21 +476,27 @@ async function researchProduct(product) {
   return cleanObject({ ...parser(specText, features, product), features, officialUrl: specSource.url, featureUrl: featurePageUrl(product) });
 }
 
-const queue = [...data.products];
-const output = {};
+const previousProducts = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")).products || {} : {};
+const requestedNames = new Set(process.argv.slice(2));
+const queue = data.products.filter((product) => !requestedNames.size || requestedNames.has(product.name));
+const total = queue.length;
+if (requestedNames.size && !total) throw new Error(`指定型番が見つかりません: ${[...requestedNames].join(", ")}`);
+const currentIds = new Set(data.products.map((product) => product.id));
+const output = Object.fromEntries(Object.entries(previousProducts).filter(([id]) => currentIds.has(id)));
 const failures = [];
-let completed = 0;
+let processed = 0;
 
 async function worker() {
   while (queue.length) {
     const product = queue.shift();
     try {
       output[product.id] = await researchProduct(product);
-      completed += 1;
-      console.log(`[${completed}/${data.products.length}] ${product.id}`);
+      processed += 1;
+      console.log(`[${processed}/${total}] ${product.id}`);
     } catch (error) {
+      processed += 1;
       failures.push(`${product.id}: ${error.message}`);
-      console.error(`FAIL ${product.id}: ${error.message}`);
+      console.error(`FAIL [${processed}/${total}] ${product.id}: ${error.message}${previousProducts[product.id] ? "（前回値を保持）" : ""}`);
     }
   }
 }
