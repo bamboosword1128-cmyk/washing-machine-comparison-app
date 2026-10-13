@@ -1,0 +1,792 @@
+{
+  "checkedAt": "2026-09-01",
+  "description": "保存済みメーカー公式カタログのラインアップ表を目視で再照合した機種別機能台帳。features はカタログ上で対象機種への搭載を確認できた項目だけを列挙する。",
+  "rules": [
+    {
+      "models": ["NA-LX129E"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"],
+        ["はやふわ乾燥（ヒートポンプ式）", "drying"], ["ふんわりジェット乾燥", "drying"], ["タオル専用コース", "drying"],
+        ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"], ["汚れはがしコース", "washing"], ["ダウンジャケットコース", "washing"],
+        ["シワとり・消臭コース", "care"], ["はっ水回復コース", "care"], ["ナノイーX衛生ケア", "care"], ["AIエコナビ", "convenience"],
+        ["ナノイーX槽カビ菌除菌", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["約60℃槽カビクリーンコース", "care"],
+        ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"], ["窓パッキング・ハンドル抗菌加工", "care"]
+      ]
+    },
+    {
+      "models": ["NA-LX127E"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["はやふわ乾燥（ヒートポンプ式）", "drying"],
+        ["ふんわりジェット乾燥", "drying"], ["タオル専用コース", "drying"], ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"],
+        ["汚れはがしコース", "washing"], ["ダウンジャケットコース", "washing"], ["シワとり・消臭コース", "care"], ["はっ水回復コース", "care"],
+        ["AIエコナビ", "convenience"], ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["約60℃槽カビクリーンコース", "care"],
+        ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"], ["窓パッキング・ハンドル抗菌加工", "care"]
+      ]
+    },
+    {
+      "models": ["NA-LX125E"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["はやふわ乾燥（ヒートポンプ式）", "drying"], ["ジェット乾燥", "drying"], ["タオル専用コース", "drying"],
+        ["スゴ落ち泡洗浄", "washing"], ["汚れはがしコース", "washing"], ["ダウンジャケットコース", "washing"], ["はっ水回復コース", "care"],
+        ["AIエコナビ", "convenience"], ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"], ["窓パッキング・ハンドル抗菌加工", "care"]
+      ]
+    },
+    {
+      "models": ["NA-LX113E"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [7],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["はやふわ乾燥（ヒートポンプ式）", "drying"], ["ジェット乾燥", "drying"], ["スゴ落ち泡洗浄", "washing"], ["AIエコナビ", "convenience"],
+        ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["槽洗浄コース（約6時間）", "care"],
+        ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["窓パッキング洗い", "care"]
+      ]
+    },
+    {
+      "models": ["NA-SD10UB"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [7],
+      "dryingMethod": "低温風パワフル乾燥（ヒーター/排気式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["低温風パワフル乾燥（ヒーター/排気式）", "drying"],
+        ["タオルコース", "drying"], ["スゴ落ち泡洗浄", "washing"], ["ダウンジャケットコース", "washing"], ["自動槽乾燥", "care"],
+        ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["槽洗浄コース（約6時間）", "care"], ["槽洗浄コース（約11時間）", "care"],
+        ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["窓パッキング洗い", "care"]
+      ]
+    },
+    {
+      "models": ["NA-SD10HB"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [7],
+      "dryingMethod": "低温風パワフル乾燥（ヒーター/排気式）",
+      "autoDosing": "大容量タンク液体洗剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["大容量タンク液体洗剤 自動投入", "convenience"], ["低温風パワフル乾燥（ヒーター/排気式）", "drying"], ["タオルコース", "drying"],
+        ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"], ["ダウンジャケットコース", "washing"], ["シワとり・消臭コース", "care"],
+        ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["約60℃槽カビクリーンコース", "care"],
+        ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"]
+      ]
+    },
+    {
+      "models": ["NA-LX129D"],
+      "sourceId": "panasonic-catalog-2025-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["はやふわ乾燥（ヒートポンプ式）", "drying"], ["ふんわりジェット乾燥", "drying"],
+        ["タオル専用コース", "drying"], ["化繊60分コース", "drying"], ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"],
+        ["汚れはがしコース", "washing"], ["シワとり・消臭コース", "care"], ["はっ水回復コース", "care"], ["ナノイーX衛生ケア", "care"],
+        ["AIエコナビ", "convenience"], ["ナノイーX槽カビ菌除菌", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["約60℃槽カビクリーンコース", "care"], ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"],
+        ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["窓パッキング洗い", "care"], ["窓パッキング・ハンドル抗菌加工", "care"]
+      ]
+    },
+    {
+      "models": ["NA-LX127D"],
+      "sourceId": "panasonic-catalog-2025-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["はやふわ乾燥（ヒートポンプ式）", "drying"], ["ふんわりジェット乾燥", "drying"],
+        ["タオル専用コース", "drying"], ["化繊60分コース", "drying"], ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"],
+        ["汚れはがしコース", "washing"], ["シワとり・消臭コース", "care"], ["はっ水回復コース", "care"], ["AIエコナビ", "convenience"],
+        ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["約60℃槽カビクリーンコース", "care"],
+        ["約30℃槽洗浄コース", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"], ["窓パッキング・ハンドル抗菌加工", "care"]
+      ]
+    },
+    {
+      "models": ["NA-SD10UA"],
+      "sourceId": "panasonic-catalog-2025-drum",
+      "pages": [7],
+      "dryingMethod": "低温風パワフル乾燥（ヒーター/排気式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["低温風パワフル乾燥（ヒーター/排気式）", "drying"],
+        ["タオルコース", "drying"], ["スゴ落ち泡洗浄", "washing"], ["自動槽乾燥", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["槽洗浄コース（約6時間）", "care"], ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["窓パッキング洗い", "care"]
+      ]
+    },
+    {
+      "models": ["NA-SD10HA"],
+      "sourceId": "panasonic-catalog-2025-drum",
+      "pages": [7],
+      "dryingMethod": "低温風パワフル乾燥（ヒーター/排気式）",
+      "autoDosing": "大容量タンク液体洗剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["大容量タンク液体洗剤 自動投入", "convenience"], ["低温風パワフル乾燥（ヒーター/排気式）", "drying"], ["タオルコース", "drying"],
+        ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"], ["シワとり・消臭コース", "care"], ["自動槽乾燥", "care"],
+        ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["約60℃槽カビクリーンコース", "care"], ["約30℃槽洗浄コース", "care"],
+        ["槽洗浄コース（約11時間）", "care"], ["槽乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["窓パッキング洗い", "care"]
+      ]
+    },
+    {
+      "models": ["NA-FA12V5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [10],
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"],
+        ["汚れはがしコース", "washing"], ["おまかせコース", "washing"], ["時短コース", "washing"], ["次亜除菌コース", "care"],
+        ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["カビクリーンタンク", "care"], ["槽洗浄（1時間）コース", "care"],
+        ["槽洗浄（6時間）コース", "care"], ["槽・風乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所）", "care"],
+        ["ビッグサークル投入口", "convenience"], ["すっきりフロント", "convenience"], ["ガラストップ／クリアウィンドウ", "convenience"],
+        ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA11K5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [10],
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["スゴ落ち泡洗浄", "washing"], ["おまかせコース", "washing"],
+        ["時短コース", "washing"], ["次亜除菌コース", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["カビクリーンタンク", "care"], ["槽洗浄（1時間）コース", "care"], ["槽洗浄（6時間）コース", "care"], ["槽・風乾燥コース", "care"],
+        ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所）", "care"], ["ビッグサークル投入口", "convenience"],
+        ["すっきりフロント", "convenience"], ["ガラストップ／クリアウィンドウ", "convenience"], ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA10K5", "NA-FA9K5", "NA-FA8K5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [10],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["スゴ落ち泡洗浄", "washing"], ["おまかせコース", "washing"],
+        ["時短コース", "washing"], ["次亜除菌コース", "care"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["カビクリーンタンク", "care"], ["槽洗浄（1時間）コース", "care"], ["槽洗浄（6時間）コース", "care"], ["槽・風乾燥コース", "care"],
+        ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所）", "care"], ["ビッグサークル投入口", "convenience"],
+        ["すっきりフロント", "convenience"], ["ガラストップ／クリアウィンドウ", "convenience"], ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA10H5", "NA-FA8H5", "NA-FA7H5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [11],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["スゴ落ち泡洗浄", "washing"], ["おまかせコース", "washing"], ["時短コース", "washing"], ["自動槽洗浄", "care"],
+        ["槽洗浄サイン", "care"], ["カビクリーンタンク", "care"], ["槽洗浄（6時間）コース", "care"], ["槽・風乾燥コース", "care"],
+        ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所）", "care"], ["すっきりフロント", "convenience"],
+        ["ガラストップ／クリアウィンドウ", "convenience"], ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA12V6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [10],
+      "autoDosing": "トリプル自動投入",
+      "smartphone": "スマホで洗濯",
+      "features": [
+        ["トリプル自動投入", "convenience"], ["スマホで洗濯", "convenience"], ["温水スゴ落ち泡洗浄", "washing"], ["スゴ落ち泡洗浄", "washing"],
+        ["汚れはがしコース", "washing"], ["次亜除菌コース", "care"], ["ダウンジャケットコース", "washing"], ["時短コース", "washing"],
+        ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"], ["カビクリーンタンク", "care"], ["槽洗浄（1時間）コース", "care"],
+        ["槽・風乾燥コース", "care"], ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所・抗菌）", "care"],
+        ["ビッグサークル投入口", "convenience"], ["すっきりフロント", "convenience"], ["ガラストップ／クリアウィンドウ", "convenience"],
+        ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA10K6", "NA-FA9K6", "NA-FA8K6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [10],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["スゴ落ち泡洗浄", "washing"], ["次亜除菌コース", "care"],
+        ["ダウンジャケットコース", "washing"], ["時短コース", "washing"], ["自動槽洗浄", "care"], ["槽洗浄サイン", "care"],
+        ["カビクリーンタンク", "care"], ["槽洗浄（1時間）コース", "care"], ["槽・風乾燥コース", "care"], ["サッと槽すすぎコース", "care"],
+        ["楽ポイフィルター（2か所・抗菌）", "care"], ["ビッグサークル投入口", "convenience"], ["すっきりフロント", "convenience"],
+        ["ガラストップ／クリアウィンドウ", "convenience"], ["フラットフェイス", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-FA10H6", "NA-FA8H6", "NA-FA7H6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["スゴ落ち泡洗浄", "washing"], ["ダウンジャケットコース", "washing"], ["時短コース", "washing"], ["自動槽洗浄", "care"],
+        ["槽洗浄サイン", "care"], ["カビクリーンタンク", "care"], ["槽洗浄（6時間）コース", "care"], ["槽・風乾燥コース", "care"],
+        ["サッと槽すすぎコース", "care"], ["楽ポイフィルター（2か所）", "care"], ["ガラストップ／クリアウィンドウ", "convenience"],
+        ["フラットフェイス", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-JFA8K6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["スゴ落ち泡洗浄", "washing"], ["次亜除菌コース", "care"],
+        ["ダウンジャケットコース", "washing"], ["時短コース", "washing"], ["自動槽洗浄", "care"], ["槽洗浄（6時間）コース", "care"],
+        ["楽ポイフィルター（2か所・抗菌）", "care"], ["ビッグサークル投入口", "convenience"], ["すっきりフロント／すぐソコスタイル", "convenience"],
+        ["ガラストップ／クリアウィンドウ", "convenience"], ["AIエコナビ", "convenience"]
+      ]
+    },
+    {
+      "models": ["NA-F7PB5", "NA-F7B5", "NA-F6B5", "NA-F5B5"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["立体水流", "washing"], ["おまかせコース", "washing"], ["槽洗浄コース", "care"], ["カビクリーンタンク", "care"],
+        ["槽乾燥コース", "care"], ["楽ポイフィルター（1か所）", "care"]
+      ]
+    },
+
+    {
+      "models": ["BD-STX130M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "らくはや 風アイロン（ヒートポンプ式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "ハピネスアップ",
+      "features": [
+        ["ワイドカラー液晶タッチパネル", "convenience"], ["ハピネスアップ", "convenience"], ["液体洗剤・柔軟剤 自動投入", "convenience"],
+        ["ナイアガラ洗浄", "washing"], ["AIお洗濯", "washing"], ["おいそぎコース", "washing"], ["温水ナイアガラ洗浄", "washing"],
+        ["強力循環ポンプ", "washing"], ["ほぐし脱水", "convenience"], ["らくはや 風アイロン", "drying"], ["ヒートポンプ式", "drying"],
+        ["らくメンテ", "care"], ["乾燥フィルターレス", "care"], ["大容量糸くずフィルター（抗菌）", "care"],
+        ["洗濯槽自動おそうじ", "care"], ["乾燥経路自動おそうじ", "care"], ["ドアパッキン自動おそうじ", "care"],
+        ["らくメンテ洗浄", "care"], ["温水槽洗浄", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BD-SX130M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "らくはや 風アイロン（ヒートポンプ式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "ハピネスアップ",
+      "features": [
+        ["ハピネスアップ", "convenience"], ["液体洗剤・柔軟剤 自動投入", "convenience"],
+        ["ナイアガラ洗浄", "washing"], ["AIお洗濯", "washing"], ["おいそぎコース", "washing"], ["温水ナイアガラ洗浄", "washing"],
+        ["強力循環ポンプ", "washing"], ["ほぐし脱水", "convenience"], ["らくはや 風アイロン", "drying"], ["ヒートポンプ式", "drying"],
+        ["らくメンテ", "care"], ["乾燥フィルターレス", "care"], ["大容量糸くずフィルター（抗菌）", "care"],
+        ["洗濯槽自動おそうじ", "care"], ["乾燥経路自動おそうじ", "care"], ["ドアパッキン自動おそうじ", "care"],
+        ["らくメンテ洗浄", "care"], ["温水槽洗浄", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BD-SW120M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "風アイロン（低温ヒート式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "ハピネスアップ",
+      "features": [
+        ["ハピネスアップ", "convenience"], ["液体洗剤・柔軟剤 自動投入", "convenience"], ["ナイアガラ洗浄", "washing"],
+        ["AIお洗濯", "washing"], ["おいそぎコース", "washing"], ["温水ナイアガラ洗浄", "washing"], ["強力循環ポンプ", "washing"],
+        ["ほぐし脱水", "convenience"], ["風アイロン（低温ヒート式）", "drying"], ["水冷除湿", "drying"], ["らくメンテ", "care"],
+        ["乾燥フィルターレス", "care"], ["大容量糸くずフィルター（抗菌）", "care"], ["洗濯槽自動おそうじ", "care"],
+        ["乾燥経路自動おそうじ", "care"], ["ドアパッキン自動おそうじ", "care"], ["らくメンテ洗浄", "care"],
+        ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BD-SV120M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "風アイロン（低温ヒート式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["ナイアガラ洗浄", "washing"], ["おいそぎコース", "washing"],
+        ["強力循環ポンプ", "washing"], ["ほぐし脱水", "convenience"], ["風アイロン（低温ヒート式）", "drying"], ["水冷除湿", "drying"],
+        ["らくメンテ", "care"], ["乾燥フィルターレス", "care"], ["大容量糸くずフィルター（抗菌）", "care"],
+        ["洗濯槽自動おそうじ", "care"], ["乾燥経路自動おそうじ", "care"], ["ドアパッキン自動おそうじ", "care"],
+        ["らくメンテ洗浄", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BD-CX100P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "風アイロン（低温ヒート式）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["センサービッグドラム洗浄", "washing"], ["AIお洗濯", "washing"],
+        ["おいそぎコース", "washing"], ["ほぐし脱水", "convenience"], ["風アイロン（低温ヒート式）", "drying"], ["水冷除湿", "drying"],
+        ["糸くずフィルター（抗菌）", "care"], ["洗濯槽自動おそうじ", "care"], ["乾燥経路自動おそうじ", "care"],
+        ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BW-X120P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "ハピネスアップ",
+      "features": [
+        ["ハピネスアップ", "convenience"], ["液体洗剤・柔軟剤 自動投入", "convenience"], ["衣類長もち ナイアガラビート洗浄", "washing"],
+        ["AIお洗濯", "washing"], ["おいそぎコース", "washing"], ["つけおき 高濃度洗浄", "washing"], ["節水循環水流", "washing"],
+        ["お湯取対応（別売ホース）", "convenience"], ["ほぐし脱水", "convenience"], ["糸くずフィルター（抗菌）", "care"],
+        ["洗濯槽自動おそうじ", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BW-X100P", "BW-X90P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["衣類長もち ナイアガラビート洗浄", "washing"], ["おいそぎコース", "washing"],
+        ["つけおき 高濃度洗浄", "washing"], ["節水循環水流", "washing"], ["お湯取対応（別売ホース）", "convenience"],
+        ["ほぐし脱水", "convenience"], ["糸くずフィルター（抗菌）", "care"], ["洗濯槽自動おそうじ", "care"],
+        ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BW-V100P", "BW-V80P", "BW-V70P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["衣類長もち ナイアガラビート洗浄", "washing"], ["おいそぎコース", "washing"], ["つけおき 高濃度洗浄", "washing"],
+        ["節水循環水流", "washing"], ["お湯取対応（別売ホース）", "convenience"], ["ほぐし脱水", "convenience"],
+        ["糸くずフィルター（抗菌）", "care"], ["洗濯槽自動おそうじ", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"],
+        ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BW-G70P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["衣類長もち ナイアガラビート洗浄", "washing"], ["おいそぎコース", "washing"], ["ほぐし脱水", "convenience"],
+        ["自動槽洗い", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"]
+      ]
+    },
+    {
+      "models": ["BW-DX100M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "速乾ビート乾燥",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "ハピネスアップ",
+      "features": [
+        ["ハピネスアップ", "convenience"], ["液体洗剤・柔軟剤 自動投入", "convenience"], ["衣類長もち ナイアガラビート洗浄", "washing"],
+        ["AIお洗濯", "washing"], ["おいそぎコース", "washing"], ["温水ナイアガラビート洗浄", "washing"], ["節水循環水流", "washing"],
+        ["ほぐし脱水・温風ほぐし脱水", "convenience"], ["速乾ビート乾燥", "drying"], ["水冷除湿", "drying"],
+        ["糸くずフィルター（抗菌）", "care"], ["洗濯槽自動おそうじ", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+    {
+      "models": ["BW-DV80M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "dryingMethod": "速乾ビート乾燥",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["衣類長もち ナイアガラビート洗浄", "washing"], ["AIお洗濯", "washing"], ["おいそぎコース", "washing"],
+        ["温水ナイアガラビート洗浄", "washing"], ["節水循環水流", "washing"], ["ほぐし脱水・温風ほぐし脱水", "convenience"],
+        ["速乾ビート乾燥", "drying"], ["水冷除湿", "drying"], ["糸くずフィルター（抗菌）", "care"],
+        ["洗濯槽自動おそうじ", "care"], ["槽洗浄", "care"], ["槽乾燥", "care"], ["インバーター", "convenience"]
+      ]
+    },
+
+    {
+      "models": ["ES-12X1"],
+      "sourceId": "sharp-catalog-2026-drum",
+      "pages": [6],
+      "dryingMethod": "ハイブリッド乾燥NEXT",
+      "autoDosing": "液体洗剤・柔軟剤自動投入",
+      "smartphone": "COCORO WASH",
+      "features": [
+        ["ハイブリッド乾燥NEXT", "drying"], ["無排気乾燥", "drying"], ["マイクロ高圧洗浄", "washing"], ["ひまわりガラス", "washing"],
+        ["高圧シャワーすすぎ", "washing"], ["液体洗剤・柔軟剤自動投入", "convenience"], ["乾燥フィルター自動お掃除", "care"],
+        ["乾燥ダクト自動お掃除", "care"], ["洗濯槽自動お掃除", "care"], ["ドアパッキン自動洗浄", "care"], ["7つのエコセンサー", "convenience"],
+        ["インバーター制御（DDモーター）", "convenience"], ["プラズマクラスター除菌乾燥", "care"], ["プラズマクラスター除菌・消臭コース", "care"],
+        ["プラズマクラスター槽クリーンコース", "care"], ["COCORO WASH", "convenience"], ["音声機能", "convenience"],
+        ["ダイレクトタッチナビ", "convenience"], ["メガマウス投入口", "convenience"], ["するポイフィルター", "care"]
+      ]
+    },
+    {
+      "models": ["ES-12P1"],
+      "sourceId": "sharp-catalog-2026-drum",
+      "pages": [6],
+      "dryingMethod": "ヒートポンプ乾燥",
+      "autoDosing": "液体洗剤・柔軟剤自動投入",
+      "smartphone": "COCORO WASH",
+      "features": [
+        ["ヒートポンプ乾燥", "drying"], ["無排気乾燥", "drying"], ["マイクロ高圧洗浄", "washing"], ["ひまわりガラス", "washing"],
+        ["高圧シャワーすすぎ", "washing"], ["液体洗剤・柔軟剤自動投入", "convenience"], ["乾燥ダクト自動お掃除", "care"],
+        ["洗濯槽自動お掃除", "care"], ["ドアパッキン自動洗浄", "care"], ["7つのエコセンサー", "convenience"],
+        ["インバーター制御（DDモーター）", "convenience"], ["低振動システム", "convenience"], ["プラズマクラスター除菌乾燥", "care"],
+        ["プラズマクラスター除菌・消臭コース", "care"], ["プラズマクラスター槽クリーンコース", "care"], ["COCORO WASH", "convenience"],
+        ["音声機能", "convenience"], ["ダイレクトタッチナビ", "convenience"], ["メガマウス投入口", "convenience"], ["するポイフィルター", "care"]
+      ]
+    },
+    {
+      "models": ["ES-8XS1"],
+      "sourceId": "sharp-catalog-2026-drum",
+      "pages": [7],
+      "dryingMethod": "ヒートポンプ乾燥",
+      "autoDosing": "液体洗剤・柔軟剤自動投入",
+      "smartphone": "",
+      "features": [
+        ["ヒートポンプ乾燥", "drying"], ["無排気乾燥", "drying"], ["マイクロ高圧洗浄", "washing"], ["ひまわりガラス", "washing"],
+        ["高圧シャワーすすぎ", "washing"], ["液体洗剤・柔軟剤自動投入", "convenience"], ["乾燥ダクト自動お掃除", "care"],
+        ["洗濯槽自動お掃除", "care"], ["ドアパッキン自動洗浄", "care"], ["インバーター制御（DDモーター）", "convenience"],
+        ["プラズマクラスター除菌乾燥", "care"], ["プラズマクラスター除菌・消臭コース", "care"], ["プラズマクラスター槽クリーンコース", "care"],
+        ["ダイレクトタッチナビ", "convenience"], ["メガマウス投入口", "convenience"], ["するポイフィルター", "care"]
+      ]
+    },
+    {
+      "models": ["ES-11K1"],
+      "sourceId": "sharp-catalog-2026-drum",
+      "pages": [7],
+      "dryingMethod": "ヒーターセンサー乾燥（水冷除湿）",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["ヒーターセンサー乾燥（水冷除湿）", "drying"], ["マイクロ高圧洗浄", "washing"], ["ひまわりガラス", "washing"],
+        ["高圧シャワーすすぎ", "washing"], ["乾燥ダクト自動お掃除", "care"], ["洗濯槽自動お掃除", "care"], ["ドアパッキン自動洗浄", "care"],
+        ["4つのエコセンサー", "convenience"], ["インバーター制御（DDモーター）", "convenience"], ["プラズマクラスター除菌乾燥", "care"],
+        ["プラズマクラスター除菌・消臭コース", "care"], ["プラズマクラスター槽クリーンコース", "care"], ["するポイフィルター", "care"]
+      ]
+    },
+    {
+      "models": ["ES-7S1", "ES-7S2"],
+      "sourceId": "sharp-catalog-2026-drum",
+      "sourceByModel": {"ES-7S1": "sharp-catalog-2025"},
+      "pages": [7],
+      "dryingMethod": "ヒーターセンサー乾燥（水冷除湿）",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["ヒーターセンサー乾燥（水冷除湿）", "drying"], ["乾燥ダクト自動お掃除", "care"], ["洗濯槽自動お掃除", "care"],
+        ["4つのエコセンサー", "convenience"], ["インバーター制御（DDモーター）", "convenience"], ["プラズマクラスター除菌乾燥", "care"],
+        ["プラズマクラスター除菌・消臭コース", "care"], ["プラズマクラスター槽クリーンコース", "care"]
+      ]
+    },
+    {
+      "models": ["ES-PW11K", "ES-PT11L"],
+      "sourceId": "sharp-catalog-2026-top",
+      "sourceByModel": {"ES-PW11K": "sharp-catalog-2025"},
+      "pages": [12],
+      "dryingMethod": "ヒーターセンサー乾燥",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["穴なしサイクロン洗浄", "washing"], ["パワフルシャワー", "washing"], ["穴なし槽", "care"], ["ダイヤカット形状／槽の底裏までステンレス", "care"],
+        ["パワフルドルフィンパルNEXT", "washing"], ["ヒーターセンサー乾燥", "drying"], ["クリップ付きハンガー", "convenience"],
+        ["プラズマクラスター除菌・消臭", "care"], ["自動槽洗い", "care"], ["槽乾燥", "care"], ["槽洗浄", "care"],
+        ["プラズマクラスター槽クリーンコース", "care"], ["槽の樹脂抗菌・防カビ加工", "care"], ["インバーター", "convenience"],
+        ["WIDEマウス", "convenience"], ["ダイレクトタッチナビ", "convenience"], ["ふろ水ポンプ対応", "convenience"]
+      ]
+    },
+    {
+      "models": ["ES-TX8K", "ES-TX8L"],
+      "sourceId": "sharp-catalog-2026-top",
+      "sourceByModel": {"ES-TX8K": "sharp-catalog-2025"},
+      "pages": [12],
+      "dryingMethod": "ヒーターセンサー乾燥",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"], ["ダイヤカット形状／槽の底裏までステンレス", "care"],
+        ["パワフルドルフィンパルNEXT", "washing"], ["ヒーターセンサー乾燥", "drying"], ["ハンガー", "convenience"],
+        ["プラズマクラスター除菌・消臭", "care"], ["自動槽洗い", "care"], ["槽乾燥", "care"], ["槽洗浄", "care"],
+        ["プラズマクラスター槽クリーンコース", "care"], ["Ag+抗菌パルセーター", "care"], ["インバーター", "convenience"],
+        ["WIDEマウス", "convenience"], ["ふろ水ポンプ対応", "convenience"]
+      ]
+    },
+    {
+      "models": ["ES-TX6K"],
+      "sourceId": "sharp-catalog-2025",
+      "pages": [12],
+      "dryingMethod": "ヒーター乾燥（タイマー付）",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"], ["槽の底裏までステンレス", "care"], ["ドルフィンパル", "washing"],
+        ["ヒーター乾燥（タイマー付）", "drying"], ["槽クリーンコース", "care"], ["槽の樹脂抗菌・防カビ加工", "care"]
+      ]
+    },
+    {
+      "models": ["ES-SW11K", "ES-SW10K", "ES-SW11L", "ES-SW10L"],
+      "sourceId": "sharp-catalog-2026-top",
+      "sourceByModel": {"ES-SW11K": "sharp-catalog-2025", "ES-SW10K": "sharp-catalog-2025"},
+      "pages": [12, 13],
+      "autoDosing": "液体洗剤・柔軟剤自動投入",
+      "smartphone": "COCORO WASH",
+      "features": [
+        ["液体洗剤・柔軟剤自動投入", "convenience"], ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"],
+        ["ダイヤカット形状／槽の底裏までステンレス", "care"], ["パワフルドルフィンパルNEXT", "washing"], ["風乾燥", "drying"],
+        ["自動槽洗い", "care"], ["槽乾燥", "care"], ["槽洗浄", "care"], ["槽の樹脂抗菌・防カビ加工", "care"],
+        ["インバーター", "convenience"], ["COCORO WASH", "convenience"], ["音声機能", "convenience"],
+        ["大きな開口部", "convenience"], ["大きくて使いやすい洗剤ケース", "convenience"], ["ふろ水ポンプ対応", "convenience"]
+      ]
+    },
+    {
+      "models": ["ES-SV8K", "ES-SV8L", "ES-SV7L"],
+      "sourceId": "sharp-catalog-2026-top",
+      "sourceByModel": {"ES-SV8K": "sharp-catalog-2025"},
+      "pages": [13],
+      "autoDosing": "液体洗剤・柔軟剤自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤自動投入", "convenience"], ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"],
+        ["槽の底裏までステンレス", "care"], ["ドルフィンパル", "washing"], ["風乾燥", "drying"], ["自動槽洗い", "care"],
+        ["槽乾燥", "care"], ["槽洗浄", "care"], ["Ag+抗菌パルセーター", "care"], ["インバーター", "convenience"], ["WIDEマウス", "convenience"]
+      ]
+    },
+    {
+      "models": ["ES-GV10K", "ES-GV8K", "ES-GV7K", "ES-GV10L", "ES-GV8L", "ES-GV7L"],
+      "sourceId": "sharp-catalog-2026-top",
+      "sourceByModel": {"ES-GV10K": "sharp-catalog-2025", "ES-GV8K": "sharp-catalog-2025", "ES-GV7K": "sharp-catalog-2025"},
+      "pages": [13],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"], ["槽の底裏までステンレス", "care"], ["ドルフィンパル", "washing"],
+        ["風乾燥", "drying"], ["自動槽洗い", "care"], ["槽乾燥", "care"], ["槽洗浄", "care"],
+        ["Ag+抗菌パルセーター", "care"], ["インバーター", "convenience"], ["WIDEマウス", "convenience"]
+      ]
+    },
+    {
+      "models": ["ES-GE7K", "ES-GE6K"],
+      "sourceId": "sharp-catalog-2026-top",
+      "pages": [13],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["穴なしサイクロン洗浄", "washing"], ["穴なし槽", "care"], ["槽の底裏までステンレス", "care"], ["ドルフィンパル", "washing"],
+        ["風乾燥", "drying"], ["自動槽洗い", "care"], ["槽乾燥", "care"], ["槽洗浄", "care"], ["槽の樹脂抗菌・防カビ加工", "care"]
+      ]
+    },
+    {
+      "models": ["ES-GE5K"],
+      "sourceId": "sharp-catalog-2026-top",
+      "pages": [13],
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [["高濃度洗浄", "washing"], ["穴あり槽", "care"], ["槽洗浄", "care"], ["風乾燥", "drying"]]
+    },
+
+    {
+      "models": ["TW-127XP5"],
+      "sourceId": "toshiba-catalog-2025",
+      "pages": [16],
+      "dryingMethod": "ふんわリッチ速乾（ヒートポンプ除湿乾燥）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマートフォン連携",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["抗菌ウルトラファインバブル洗浄EX", "washing"], ["温水抗菌ウルトラファインバブル洗浄EX", "washing"],
+        ["Ag+抗菌水", "care"], ["ふんわリッチ速乾", "drying"], ["湿度センサー", "drying"], ["うるおい上質仕上げ", "drying"],
+        ["しわケアコース", "drying"], ["振動吸収クッション", "convenience"], ["S-DDモーター", "convenience"], ["インバーター制御", "convenience"],
+        ["槽洗浄・槽乾燥・60℃温水槽洗浄・カビプロテクト", "care"], ["自動おそうじ機能", "care"], ["UV除菌・UV除菌消臭・UV除菌洗乾コース", "care"],
+        ["乾燥ダクト自動お手入れ・熱交換器自動洗浄・ドアパッキン洗浄", "care"], ["乾燥フィルターラクラクお手入れ", "care"],
+        ["ecoモード", "convenience"], ["スマートフォン連携", "convenience"], ["新・大型カラータッチパネル", "convenience"], ["槽内LED照明", "convenience"]
+      ]
+    },
+    {
+      "models": ["TW-127XH5"],
+      "sourceId": "toshiba-catalog-2025",
+      "pages": [16],
+      "dryingMethod": "ふんわリッチ速乾（ヒートポンプ除湿乾燥）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマートフォン連携",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["抗菌ウルトラファインバブル洗浄W", "washing"], ["温水抗菌ウルトラファインバブル洗浄W", "washing"],
+        ["Ag+抗菌水", "care"], ["ふんわリッチ速乾", "drying"], ["振動吸収クッション", "convenience"], ["S-DDモーター", "convenience"],
+        ["インバーター制御", "convenience"], ["槽洗浄・槽乾燥・カビプロテクト", "care"], ["自動おそうじ機能", "care"],
+        ["UV温風除菌・UV除菌消臭コース", "care"], ["消臭コース", "care"], ["乾燥ダクト自動お手入れ・熱交換器自動洗浄・ドアパッキン洗浄", "care"],
+        ["ecoモード", "convenience"], ["スマートフォン連携", "convenience"], ["LED表示", "convenience"]
+      ]
+    },
+    {
+      "models": ["TW-127XM5"],
+      "sourceId": "toshiba-catalog-2025",
+      "pages": [16],
+      "dryingMethod": "ふんわリッチ速乾（ヒートポンプ除湿乾燥）",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["抗菌ウルトラファインバブル洗浄W", "washing"], ["Ag+抗菌水", "care"],
+        ["ふんわリッチ速乾", "drying"], ["振動吸収クッション", "convenience"], ["S-DDモーター", "convenience"], ["インバーター制御", "convenience"],
+        ["槽洗浄・槽乾燥・カビプロテクト", "care"], ["自動おそうじ機能", "care"], ["除菌乾燥モード", "care"], ["除菌消臭コース", "care"],
+        ["乾燥ダクト自動お手入れ・熱交換器自動洗浄・ドアパッキン洗浄", "care"], ["ecoモード", "convenience"], ["LED表示", "convenience"]
+      ]
+    },
+    {
+      "models": ["TW-84GS5"],
+      "sourceId": "toshiba-catalog-2025",
+      "pages": [16],
+      "dryingMethod": "ヒーター式乾燥（水冷除湿）",
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["抗菌ウルトラファインバブル洗浄W", "washing"], ["温水抗菌ウルトラファインバブル洗浄", "washing"], ["Ag+抗菌水", "care"],
+        ["ヒーター式乾燥（水冷除湿）", "drying"], ["しわケアLiteコース", "drying"], ["インバーター制御", "convenience"],
+        ["槽洗浄・槽乾燥・カビプロテクト", "care"], ["自動おそうじ機能", "care"], ["除菌脱水コース", "care"],
+        ["除菌消臭コース", "care"], ["ドアパッキン洗浄", "care"], ["LED表示", "convenience"]
+      ]
+    },
+    {
+      "models": ["AW-12DPB5", "AW-10DPB5", "AW-12DPB6", "AW-10DPB6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "sourceByModel": {"AW-12DPB5": "toshiba-catalog-2025", "AW-10DPB5": "toshiba-catalog-2025"},
+      "pages": [12],
+      "pagesByModel": {"AW-12DPB5": [16], "AW-10DPB5": [16]},
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "スマートフォン連携",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["抗菌ウルトラファインバブル洗浄W", "washing"], ["Ag+抗菌水", "care"],
+        ["ザブーンパル6+", "washing"], ["おしゃれ着トレー", "convenience"], ["風乾燥", "drying"], ["DDモーター", "convenience"],
+        ["インバーター制御", "convenience"], ["槽洗浄・槽乾燥（ヒーターレス）コース", "care"], ["自動おそうじ機能", "care"],
+        ["ecoモード", "convenience"], ["ふろ水ポンプ対応", "convenience"], ["スマートフォン連携", "convenience"],
+        ["バック操作パネル", "convenience"], ["ほぐせる脱水", "convenience"]
+      ]
+    },
+    {
+      "models": ["AW-9DP5", "AW-8DP5", "AW-9DPB6", "AW-8DPB6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "sourceByModel": {"AW-9DP5": "toshiba-catalog-2025", "AW-8DP5": "toshiba-catalog-2025"},
+      "pages": [12],
+      "pagesByModel": {"AW-9DP5": [16], "AW-8DP5": [16]},
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["抗菌ウルトラファインバブル洗浄W", "washing"], ["Ag+抗菌水", "care"],
+        ["ザブーンパル", "washing"], ["風乾燥", "drying"], ["DDモーター", "convenience"], ["インバーター制御", "convenience"],
+        ["槽洗浄・槽乾燥（ヒーターレス）コース", "care"], ["自動おそうじ機能", "care"], ["ecoモード", "convenience"],
+        ["ふろ水ポンプ対応", "convenience"], ["バック操作パネル", "convenience"], ["ほぐせる脱水", "convenience"]
+      ]
+    },
+    {
+      "models": ["AW-10DHB5", "AW-10DHB6", "AW-9DH5", "AW-8DH5", "AW-9DHB6", "AW-8DHB6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "sourceByModel": {"AW-10DHB5": "toshiba-catalog-2025", "AW-9DH5": "toshiba-catalog-2025", "AW-8DH5": "toshiba-catalog-2025"},
+      "pages": [12],
+      "pagesByModel": {"AW-10DHB5": [16], "AW-9DH5": [16], "AW-8DH5": [16]},
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["抗菌ウルトラファインバブル洗浄W", "washing"], ["Ag+抗菌水", "care"], ["ザブーンパル6+", "washing"],
+        ["風乾燥", "drying"], ["DDモーター", "convenience"], ["インバーター制御", "convenience"],
+        ["槽洗浄・槽乾燥（ヒーターレス）コース", "care"], ["自動おそうじ機能", "care"], ["ecoモード", "convenience"],
+        ["ふろ水ポンプ対応", "convenience"], ["バック操作パネル", "convenience"], ["ほぐせる脱水", "convenience"]
+      ]
+    },
+    {
+      "models": ["AW-7DH5", "AW-7DH6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "sourceByModel": {"AW-7DH5": "toshiba-catalog-2025"},
+      "pages": [12],
+      "pagesByModel": {"AW-7DH5": [16]},
+      "autoDosing": "",
+      "smartphone": "",
+      "features": [
+        ["抗菌ウルトラファインバブル洗浄", "washing"], ["風乾燥", "drying"], ["DDMモーター", "convenience"],
+        ["槽洗浄・槽乾燥（ヒーターレス）コース", "care"], ["自動槽洗いモード", "care"]
+      ]
+    },
+
+    {
+      "models": ["HWF-D120XL-W"],
+      "sourceId": "hisense-catalog-2026-drum",
+      "pages": [4],
+      "dryingMethod": "ヒートポンプ式",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["ヒートポンプ乾燥", "drying"], ["自動槽洗浄", "care"],
+        ["槽洗浄3コース", "care"], ["槽乾燥（30分）", "care"], ["自動槽乾燥", "care"], ["排水フィルター", "care"],
+        ["乾燥フィルター", "care"], ["予約タイマー", "convenience"], ["チャイルドロック／ふたロック", "convenience"],
+        ["おいそぎコース", "washing"], ["つけおきコース", "washing"], ["香プラスコース", "washing"], ["手動柔軟剤コース", "washing"],
+        ["ナイトコース", "convenience"], ["おしゃれ着コース", "washing"], ["毛布コース", "washing"], ["自分流コース", "washing"], ["除菌60℃コース", "care"]
+      ]
+    },
+    {
+      "models": ["HWF-D100SL-W"],
+      "sourceId": "hisense-catalog-2026-drum",
+      "pages": [4],
+      "dryingMethod": "ヒーター式",
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["ヒーター式乾燥", "drying"], ["自動槽洗浄", "care"],
+        ["槽洗浄3コース", "care"], ["槽乾燥（30分）", "care"], ["自動槽乾燥", "care"], ["排水フィルター", "care"],
+        ["乾燥フィルター", "care"], ["予約タイマー", "convenience"], ["チャイルドロック／ふたロック", "convenience"], ["＋機能", "convenience"],
+        ["おいそぎコース", "washing"], ["念入りコース", "washing"], ["つけおきコース", "washing"], ["おしゃれ着コース", "washing"],
+        ["毛布コース", "washing"], ["自分流コース", "washing"], ["ナイトコース", "convenience"], ["除菌60℃コース", "care"]
+      ]
+    },
+    {
+      "models": ["HW-G55XL-W", "HW-G55XL-B"],
+      "sourceId": "hisense-catalog-2026-top",
+      "sourceByModel": {"HW-G55XL-W": "hisense-catalog-2025-top"},
+      "pages": [6],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["立体シャワー水流", "washing"], ["独自形状パルセーター", "washing"],
+        ["ステンレス槽", "care"], ["風乾燥（部屋干し）", "drying"], ["槽洗浄3コース", "care"], ["槽乾燥（30分）", "care"],
+        ["ガラストップ", "convenience"], ["毛布コース", "washing"], ["ドライコース（おしゃれ着）", "washing"], ["糸くずフィルター", "care"],
+        ["予約タイマー", "convenience"], ["チャイルドロック／ふたロック", "convenience"], ["＋機能", "convenience"]
+      ]
+    },
+    {
+      "models": ["HW-G70XL-W", "HW-G70XL-B"],
+      "sourceId": "hisense-catalog-2026-top",
+      "sourceByModel": {"HW-G70XL-W": "hisense-catalog-2025-top"},
+      "pages": [6],
+      "autoDosing": "液体洗剤・柔軟剤 自動投入",
+      "smartphone": "",
+      "features": [
+        ["液体洗剤・柔軟剤 自動投入", "convenience"], ["立体シャワー水流", "washing"], ["独自形状パルセーター", "washing"],
+        ["ステンレス槽", "care"], ["風乾燥（部屋干し）", "drying"], ["槽洗浄3コース", "care"], ["槽乾燥（30分）", "care"],
+        ["ガラストップ", "convenience"], ["毛布コース", "washing"], ["ドライコース（おしゃれ着）", "washing"], ["糸くずフィルター", "care"],
+        ["予約タイマー", "convenience"], ["チャイルドロック／ふたロック", "convenience"], ["＋機能", "convenience"], ["銀イオン抗菌コート", "care"]
+      ]
+    }
+  ]
+}

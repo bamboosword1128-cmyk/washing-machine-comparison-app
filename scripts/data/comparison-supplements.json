@@ -1,0 +1,213 @@
+{
+  "description": "比較表のうち既存の公式仕様補完データにない値。各ルールは保存済み公式カタログの機種別欄を目視確認したもの。",
+  "checkedAt": "2026-10-13",
+  "rules": [
+    {
+      "models": ["NA-FA12V6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [10],
+      "facts": {
+        "inverter": "インバーター制御",
+        "bodyWidthMm": 600
+      }
+    },
+    {
+      "models": ["NA-FA10K6", "NA-FA9K6", "NA-FA8K6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [10],
+      "facts": {
+        "inverter": "インバーター制御",
+        "bodyWidthMm": 554
+      }
+    },
+    {
+      "models": ["NA-FA10H6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "facts": {
+        "inverter": "インバーター制御",
+        "bodyWidthMm": 554
+      }
+    },
+    {
+      "models": ["NA-FA8H6", "NA-FA7H6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "facts": {
+        "inverter": "インバーター制御",
+        "bodyWidthMm": 520
+      }
+    },
+    {
+      "models": ["NA-JFA8K6"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "facts": {
+        "inverter": "インバーター制御",
+        "bodyWidthMm": 554
+      }
+    },
+    {
+      "models": ["NA-FA12V5", "NA-FA11K5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [10],
+      "facts": { "bodyWidthMm": 600 }
+    },
+    {
+      "models": ["NA-FA10K5", "NA-FA9K5", "NA-FA8K5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [10],
+      "facts": { "bodyWidthMm": 554 }
+    },
+    {
+      "models": ["NA-FA10H5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [11],
+      "facts": { "bodyWidthMm": 554 }
+    },
+    {
+      "models": ["NA-FA8H5", "NA-FA7H5"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [11],
+      "facts": { "bodyWidthMm": 520 }
+    },
+    {
+      "models": ["NA-JFA8K2"],
+      "sourceId": "panasonic-catalog-2025-top",
+      "pages": [11],
+      "facts": { "bodyWidthMm": 554 }
+    },
+    {
+      "models": ["NA-F7PB5", "NA-F7B5", "NA-F6B5", "NA-F5B5"],
+      "sourceId": "panasonic-catalog-2026-top",
+      "pages": [11],
+      "facts": { "bodyWidthMm": 520 }
+    },
+    {
+      "models": ["NA-SD10UA", "NA-SD10HA"],
+      "sourceId": "panasonic-catalog-2025-drum",
+      "pages": [7],
+      "facts": { "bodyWidthMm": 600 }
+    },
+    {
+      "models": ["NA-SD10UB", "NA-SD10HB"],
+      "sourceId": "panasonic-catalog-2026-drum",
+      "pages": [7],
+      "facts": { "bodyWidthMm": 600 }
+    },
+    {
+      "models": ["BD-STX130M", "BD-SX130M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "dehumidification": "ヒートポンプ式（湿度センサー制御）",
+        "reservation": "洗濯：3〜24時間／洗濯〜乾燥：5〜24時間／乾燥：5〜24時間",
+        "blanketCapacity": "毛布：洗濯6kg以下・洗濯〜乾燥3.6kg以下／掛け布団：洗濯1.4kg以下・洗濯〜乾燥1.4kg以下"
+      }
+    },
+    {
+      "models": ["BD-SW120M", "BD-SV120M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "dehumidification": "水冷除湿",
+        "reservation": "洗濯：3〜24時間／洗濯〜乾燥：5〜24時間／乾燥：5〜24時間",
+        "blanketCapacity": "毛布：洗濯5kg以下・洗濯〜乾燥3kg以下／掛け布団：洗濯1kg以下・洗濯〜乾燥1kg以下"
+      }
+    },
+    {
+      "models": ["BD-CX100P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "dehumidification": "水冷除湿",
+        "reservation": "終了時刻設定：0:00〜23:50（10分単位）",
+        "blanketCapacity": "毛布：洗濯4.2kg以下・洗濯〜乾燥3kg以下／掛け布団：洗濯1kg以下・洗濯〜乾燥1kg以下"
+      }
+    },
+    {
+      "models": ["BW-X120P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "reservation": "洗濯：3〜24時間",
+        "blanketCapacity": "毛布：洗濯6kg以下／掛け布団：洗濯2kg以下"
+      }
+    },
+    {
+      "models": ["BW-X100P", "BW-X90P", "BW-V100P", "BW-V80P", "BW-V70P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "reservation": "洗濯：3〜24時間",
+        "blanketCapacity": "毛布：洗濯4.7kg以下／掛け布団：洗濯1.8kg以下"
+      }
+    },
+    {
+      "models": ["BW-G70P"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "inverter": "インバーター式",
+        "reservation": "洗濯：3〜24時間",
+        "blanketCapacity": "毛布：洗濯4.2kg以下／掛け布団：洗濯1.8kg以下"
+      }
+    },
+    {
+      "models": ["BW-DX100M", "BW-DV80M"],
+      "sourceId": "hitachi-catalog-2026",
+      "pages": [10],
+      "facts": {
+        "dehumidification": "水冷除湿",
+        "reservation": "洗濯：3〜24時間／洗濯〜乾燥：5〜24時間",
+        "blanketCapacity": "毛布：洗濯4.7kg以下・洗濯〜乾燥2.8kg以下／掛け布団：洗濯1.8kg以下"
+      }
+    },
+    {
+      "models": ["HWF-D120XL-W", "HWF-D100SL-W"],
+      "sourceId": "hisense-catalog-2026-drum",
+      "pages": [4],
+      "facts": {
+        "reservation": "洗濯：3〜24時間（1時間単位）／洗濯〜乾燥：6〜24時間（1時間単位）",
+        "blanketCapacity": "毛布：洗濯3kgまで・洗濯〜乾燥3kgまで"
+      }
+    },
+    {
+      "models": ["HW-G55XL-B", "HW-G70XL-B"],
+      "sourceId": "hisense-catalog-2026-top",
+      "pages": [6],
+      "facts": {
+        "inverter": "非搭載",
+        "reservation": "1〜24時間（1時間単位）",
+        "blanketCapacity": "毛布：洗濯3.5kg以下"
+      }
+    },
+    {
+      "models": ["HW-G55XL-W", "HW-G70XL-W"],
+      "sourceId": "hisense-catalog-2025-top",
+      "pages": [4],
+      "facts": {
+        "inverter": "非搭載",
+        "reservation": "1〜24時間（1時間単位）",
+        "blanketCapacity": "毛布：洗濯3.5kg以下"
+      }
+    },
+    {
+      "models": ["AW-12DPB6", "AW-10DPB6", "AW-10DHB6", "AW-9DPB6", "AW-8DPB6", "AW-9DHB6", "AW-8DHB6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "pages": [12],
+      "facts": {
+        "reservation": "1〜24時間後設定"
+      }
+    },
+    {
+      "models": ["AW-7DH6"],
+      "sourceId": "toshiba-catalog-2026-top",
+      "pages": [12],
+      "facts": {
+        "inverter": "非搭載",
+        "reservation": "1〜24時間後設定"
+      }
+    }
+  ]
+}

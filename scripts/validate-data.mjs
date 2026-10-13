@@ -10,6 +10,9 @@ const ROOT = resolve(HERE, "..");
 const DATA_FILE = resolve(ROOT, "app/data.js");
 const REQUESTED_MODELS_FILE = resolve(HERE, "data/requested-models-2026-08-15.json");
 const ENRICHMENT_FILE = resolve(HERE, "data/official-enrichment.json");
+const CATALOG_AUDIT_FILE = resolve(HERE, "data/catalog-feature-audit.json");
+const FEATURE_EXPLAINER_PARTS_FILE = resolve(HERE, "data/feature-explainer-parts.json");
+const COMPARISON_SUPPLEMENTS_FILE = resolve(HERE, "data/comparison-supplements.json");
 const ALLOWED_YEARS = new Set([2022, 2023, 2024, 2025, 2026]);
 const ALLOWED_HOSTS = [
   "panasonic.jp",
@@ -41,8 +44,24 @@ try {
 const data = context.window.APPLIANCE_DATA;
 if (!data || typeof data !== "object") error("window.APPLIANCE_DATA がありません");
 
-const requiredTopLevel = ["app", "makers", "capacityGroups", "washerTypes", "featureGroups", "sources", "products"];
+const requiredTopLevel = ["app", "makers", "capacityGroups", "washerTypes", "featureGroups", "featureExplainerParts", "catalogAudit", "sources", "products"];
 for (const key of requiredTopLevel) if (!(key in data)) error(`トップレベル ${key} がありません`);
+
+const expectedFeatureParts = JSON.parse(readFileSync(FEATURE_EXPLAINER_PARTS_FILE, "utf8"));
+if (JSON.stringify(data.featureExplainerParts) !== JSON.stringify(expectedFeatureParts)) error("機能トグルの分割データが元データと一致しません");
+const featureNames = new Set((data.products || []).flatMap((product) => (product.features || []).map((feature) => feature.name)));
+for (const [combinedName, parts] of Object.entries(expectedFeatureParts)) {
+  if (!featureNames.has(combinedName)) error(`分割元の機能が製品データにありません: ${combinedName}`);
+  if (!Array.isArray(parts) || parts.length < 2) {
+    error(`機能トグルは2項目以上に分割してください: ${combinedName}`);
+    continue;
+  }
+  if (new Set(parts.map((part) => part.name)).size !== parts.length) error(`分割後の機能名が重複しています: ${combinedName}`);
+  for (const part of parts) {
+    if (!part.name?.trim() || !part.description?.trim()) error(`分割後の機能名か説明が空です: ${combinedName}`);
+    if (part.name === combinedName) error(`分割後も複数機能の名称が残っています: ${combinedName}`);
+  }
+}
 
 const duplicateValues = (values) => [...new Set(values.filter((value, index) => values.indexOf(value) !== index))];
 const makerIds = new Set(data.makers?.map((item) => item.id));
@@ -84,11 +103,24 @@ for (const product of data.products || []) {
   for (const feature of product.features || []) {
     if (!groupIds.has(feature.groupId)) error(`${path}: 機能 ${feature.name} の groupId ${feature.groupId} が未定義です`);
     if (!feature.description) error(`${path}: 機能 ${feature.name} の説明がありません`);
+    if (/対象機種欄で搭載を確認/.test(feature.description || "")) error(`${path}: 機能 ${feature.name} に汎用説明が残っています`);
     if (!Array.isArray(feature.sourceIds) || !feature.sourceIds.length) error(`${path}: 機能 ${feature.name} に情報源がありません`);
     for (const sourceId of feature.sourceIds || []) if (!sourceIds.has(sourceId)) error(`${path}: 機能 ${feature.name} の情報源 ${sourceId} が未定義です`);
   }
+  const duplicateFeatureNames = duplicateValues((product.features || []).map((feature) => feature.name));
+  if (duplicateFeatureNames.length) error(`${path}: 機能名が重複しています (${duplicateFeatureNames.join(", ")})`);
   for (const item of product.additionalSpecs || []) {
     if (!item?.label || !item?.value) error(`${path}: additionalSpecs は label と value が必要です`);
+  }
+  if (product.comparisonFacts) {
+    const facts = product.comparisonFacts;
+    for (const key of Object.keys(facts)) {
+      if (key !== "evidence" && !["inverter", "dehumidification", "reservation", "blanketCapacity", "bodyWidthMm"].includes(key)) error(`${path}: 未定義の比較補完項目 ${key} です`);
+      if (key === "bodyWidthMm" && (!Number.isInteger(facts[key]) || facts[key] <= 0 || facts[key] !== product.dimensions.bodyWidthMm)) error(`${path}: 本体幅の比較補完値が不正です`);
+      if (key !== "evidence" && key !== "bodyWidthMm" && (typeof facts[key] !== "string" || !facts[key])) error(`${path}: 比較補完項目 ${key} が空です`);
+    }
+    if (!facts.evidence || !sourceIds.has(facts.evidence.sourceId) || !product.sourceIds.includes(facts.evidence.sourceId)) error(`${path}: 比較補完項目の出典がありません`);
+    if (!Array.isArray(facts.evidence?.pages) || !facts.evidence.pages.length) error(`${path}: 比較補完項目のページがありません`);
   }
   for (const [key, value] of Object.entries(product.performance || {})) {
     if (key === "noise") continue;
@@ -104,6 +136,68 @@ for (const product of data.products || []) {
     if (value != null && typeof value !== "number") error(`${path}: dimensions.${key} は単位を含まない数値またはnullにしてください`);
   }
 }
+
+let catalogAuditedCount = 0;
+if (!existsSync(CATALOG_AUDIT_FILE)) {
+  error("カタログ機能照合台帳がありません");
+} else {
+  const catalogAudit = JSON.parse(readFileSync(CATALOG_AUDIT_FILE, "utf8"));
+  if (catalogAudit.checkedAt > data.app.updatedAt) error(`カタログ機能照合日がアプリ更新日より新しいです: ${catalogAudit.checkedAt} / ${data.app.updatedAt}`);
+  const auditedModels = new Set();
+  for (const rule of catalogAudit.rules || []) {
+    for (const model of rule.models || []) {
+      if (auditedModels.has(model)) {
+        error(`カタログ機能照合台帳で機種が重複しています: ${model}`);
+        continue;
+      }
+      auditedModels.add(model);
+      const product = (data.products || []).find((item) => item.name === model);
+      if (!product) {
+        error(`カタログ機能照合台帳の機種がアプリにありません: ${model}`);
+        continue;
+      }
+      catalogAuditedCount += 1;
+      const sourceId = rule.sourceByModel?.[model] || rule.sourceId;
+      const pages = rule.pagesByModel?.[model] || rule.pages;
+      const expectedFeatures = (rule.features || []).map(([name, groupId]) => ({ name, groupId }));
+      const actualFeatures = (product.features || []).map(({ name, groupId }) => ({ name, groupId }));
+      if (JSON.stringify(actualFeatures) !== JSON.stringify(expectedFeatures)) error(`${model}: 生成された機能一覧がカタログ機能照合台帳と一致しません`);
+      if ((product.features || []).some((feature) => JSON.stringify(feature.sourceIds) !== JSON.stringify([sourceId]))) error(`${model}: カタログ照合機能の情報源が ${sourceId} に限定されていません`);
+      if (product.catalogEvidence?.sourceId !== sourceId) error(`${model}: catalogEvidence.sourceId が一致しません`);
+      if (JSON.stringify(product.catalogEvidence?.pages) !== JSON.stringify(pages)) error(`${model}: catalogEvidence.pages が一致しません`);
+      if (product.catalogEvidence?.checkedAt !== catalogAudit.checkedAt) error(`${model}: catalogEvidence.checkedAt が一致しません`);
+      if (Object.hasOwn(rule, "dryingMethod") && product.drying?.method !== rule.dryingMethod) error(`${model}: 乾燥方式がカタログ機能照合台帳と一致しません`);
+      if (Object.hasOwn(rule, "autoDosing") && product.specDetails?.autoDosing !== rule.autoDosing) error(`${model}: 自動投入情報がカタログ機能照合台帳と一致しません`);
+      if (Object.hasOwn(rule, "smartphone") && product.specDetails?.smartphone !== rule.smartphone) error(`${model}: スマートフォン連携情報がカタログ機能照合台帳と一致しません`);
+      const highlightsByGroup = { washing: "washHighlights", drying: "dryingHighlights", care: "careHighlights", convenience: "convenienceHighlights" };
+      for (const [groupId, key] of Object.entries(highlightsByGroup)) {
+        const expectedHighlights = expectedFeatures.filter((feature) => feature.groupId === groupId).map((feature) => feature.name);
+        if (JSON.stringify(product.specDetails?.[key]) !== JSON.stringify(expectedHighlights)) error(`${model}: specDetails.${key} がカタログ機能照合台帳と一致しません`);
+      }
+      const panelFeature = expectedFeatures.find((feature) => /操作パネル|タッチパネル|タッチナビ|バック操作/.test(feature.name));
+      if (panelFeature && product.specDetails?.panel !== panelFeature.name) error(`${model}: 操作パネル情報がカタログ機能照合台帳と一致しません`);
+      if (product.specDetails?.panel === "寸法") error(`${model}: 操作パネルへ仕様見出し「寸法」が誤登録されています`);
+    }
+  }
+  if (data.catalogAudit?.checkedAt !== catalogAudit.checkedAt) error("生成データのカタログ照合日が台帳と一致しません");
+  if (data.catalogAudit?.auditedProducts !== catalogAuditedCount) error(`生成データのカタログ照合件数が不一致です: ${data.catalogAudit?.auditedProducts} / ${catalogAuditedCount}`);
+  if (data.catalogAudit?.totalProducts !== (data.products || []).length) error("生成データの総機種数が catalogAudit.totalProducts と一致しません");
+}
+
+function assertFeatureExcluded(model, patterns) {
+  const product = (data.products || []).find((item) => item.name === model);
+  if (!product) return;
+  const falselyIncluded = (product.features || []).filter((feature) => patterns.some((pattern) => pattern.test(feature.name)));
+  if (falselyIncluded.length) error(`${model}: 非搭載を確認した機能が含まれています (${falselyIncluded.map((feature) => feature.name).join(", ")})`);
+}
+
+for (const model of ["NA-SD10UA", "NA-SD10HA", "NA-SD10UB", "NA-SD10HB"]) assertFeatureExcluded(model, [/ヒートポンプ/]);
+for (const model of ["NA-SD10HA", "NA-SD10HB"]) assertFeatureExcluded(model, [/スマホ/]);
+assertFeatureExcluded("NA-LX113E", [/トリプル自動投入/, /スマホ/, /ナノイー/, /汚れはがし/]);
+assertFeatureExcluded("NA-LX125E", [/スマホ/, /ナノイー/]);
+assertFeatureExcluded("NA-LX127E", [/ナノイー/]);
+assertFeatureExcluded("ES-8XS1", [/COCORO WASH/i, /音声/]);
+assertFeatureExcluded("BD-SX130M", [/ワイドカラー液晶タッチパネル/]);
 
 if (!existsSync(ENRICHMENT_FILE)) {
   error("公式仕様補完データがありません");
@@ -159,7 +253,7 @@ for (const maker of data.makers || []) {
   if (maker.logo && !existsSync(resolve(ROOT, "app", maker.logo))) warn(`${maker.name}: ロゴが見つかりません (${maker.logo})`);
 }
 
-for (const file of ["app/index.html", "app/styles.css", "app/app.js", "app/data.js", "SOURCE_NOTES.md", "netlify.toml", "洗濯機説明ナビ.command"]) {
+for (const file of ["app/index.html", "app/styles.css", "app/app.js", "app/data.js", "SOURCE_NOTES.md", "scripts/data/catalog-feature-audit.json", "scripts/data/feature-explainer-parts.json", "netlify.toml", "洗濯機説明ナビ.command"]) {
   if (!existsSync(resolve(ROOT, file))) error(`必須ファイルがありません: ${file}`);
 }
 
@@ -175,5 +269,5 @@ for (const product of data.products) {
   const key = `${product.makerId}/${product.modelYear}/${product.type}`;
   byMakerYearType[key] = (byMakerYearType[key] || 0) + 1;
 }
-console.log(`検証成功: ${data.makers.length}メーカー / ${data.products.length}基本機種 / ${modelOwners.size}型番`);
+console.log(`検証成功: ${data.makers.length}メーカー / ${data.products.length}基本機種 / ${modelOwners.size}型番 / カタログ機能照合 ${catalogAuditedCount}機種`);
 for (const [key, count] of Object.entries(byMakerYearType).sort()) console.log(`${key}: ${count}`);

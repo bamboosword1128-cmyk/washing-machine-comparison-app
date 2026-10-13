@@ -8,8 +8,13 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(HERE, "../app/data.js");
 const NOTES_OUT = resolve(HERE, "../SOURCE_NOTES.md");
 const ENRICHMENT_FILE = resolve(HERE, "data/official-enrichment.json");
+const CATALOG_AUDIT_FILE = resolve(HERE, "data/catalog-feature-audit.json");
+const CATALOG_EXPLANATIONS_FILE = resolve(HERE, "data/catalog-feature-explanations.json");
+const FEATURE_EXPLAINER_PARTS_FILE = resolve(HERE, "data/feature-explainer-parts.json");
+const COMPARISON_SUPPLEMENTS_FILE = resolve(HERE, "data/comparison-supplements.json");
 const VERIFIED_AT = "2026-08-22";
-const CATALOG_CHECKED_AT = "2026-08-22";
+const CATALOG_CHECKED_AT = "2026-09-01";
+const APP_UPDATED_AT = "2026-10-13";
 
 const sources = [
   { id: "panasonic-lineup", makerId: "panasonic", title: "洗濯機・衣類乾燥機 ラインアップ", url: "https://panasonic.jp/wash/", checkedAt: VERIFIED_AT },
@@ -41,14 +46,16 @@ const sources = [
   { id: "hisense-d100", makerId: "hisense", title: "ドラム式洗濯乾燥機 HWF-D100SL-W 発表", url: "https://www.hisense.co.jp/news/detail.php?id=206&news_category_id=1", checkedAt: VERIFIED_AT },
   { id: "panasonic-catalog-2026-drum", makerId: "panasonic", title: "洗濯機カタログ 2026春夏（ドラム式 p.2–9）", url: "https://panasonic.jp/content/dam/panasonic/jp/ja/catalog/pdf/wash.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "panasonic-catalog-2026-top", makerId: "panasonic", title: "洗濯機カタログ 2026春夏（縦型 p.10–13）", url: "https://panasonic.jp/content/dam/panasonic/jp/ja/catalog/pdf/wash.pdf", checkedAt: CATALOG_CHECKED_AT },
-  { id: "hitachi-catalog-2026", makerId: "hitachi", title: "洗濯機総合カタログ 2026-02（機能・ラインアップ p.2–10）", url: "https://kadenfan.hitachi.co.jp/catalog/wash/book/data/Target.pdf", checkedAt: CATALOG_CHECKED_AT },
+  { id: "panasonic-catalog-2025-drum", makerId: "panasonic", title: "洗濯機カタログ 2025夏（ドラム式 p.2–9）", url: "https://web.archive.org/web/20250722070300id_/https://panasonic.jp/catalog/ctlg/wash/wash.pdf", checkedAt: CATALOG_CHECKED_AT },
+  { id: "panasonic-catalog-2025-top", makerId: "panasonic", title: "洗濯機カタログ 2025夏（縦型 p.10–13）", url: "https://web.archive.org/web/20250722070300id_/https://panasonic.jp/catalog/ctlg/wash/wash.pdf", checkedAt: CATALOG_CHECKED_AT },
+  { id: "hitachi-catalog-2026", makerId: "hitachi", title: "洗濯機総合カタログ 2026-02（機能・ラインアップ p.2–10）", url: "https://kadenfan.hitachi.co.jp/catalog/wash/book/data/target.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "sharp-catalog-2026-drum", makerId: "sharp", title: "洗濯機総合カタログ 2026-04（ドラム式 p.2–9）", url: "https://cgi.jp.sharp/catalog/pdf/ha/SHARP-sentaku-2026-06.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "sharp-catalog-2026-top", makerId: "sharp", title: "洗濯機総合カタログ 2026-04（縦型 p.10–15）", url: "https://cgi.jp.sharp/catalog/pdf/ha/SHARP-sentaku-2026-06.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "toshiba-catalog-2026-top", makerId: "toshiba", title: "洗濯機総合カタログ 2026-02（縦型 p.8–12）", url: "https://www.toshiba-lifestyle.com/sites/default/files/2026-04/laundries-2026-04.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "hisense-catalog-2026-drum", makerId: "hisense", title: "洗濯機総合カタログ 2026-02（ドラム式 p.2–4）", url: "https://www.hisense.co.jp/support/catalog/pdf/catalog_wash.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "hisense-catalog-2026-top", makerId: "hisense", title: "洗濯機総合カタログ 2026-02（縦型 p.6–8）", url: "https://www.hisense.co.jp/support/catalog/pdf/catalog_wash.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "sharp-catalog-2025", makerId: "sharp", title: "洗濯機総合カタログ 2025-09（仕様 p.6–15）", url: "https://jp.sharp/catalog/pdf/ha/SHARP-sentaku-2025-09.pdf", checkedAt: CATALOG_CHECKED_AT },
-  { id: "toshiba-catalog-2025", makerId: "toshiba", title: "洗濯機総合カタログ 2025-03（機能・仕様 p.2–13）", url: "https://www.toshiba-lifestyle.com/sites/default/files/2025-08/laundries-2025-08.pdf", checkedAt: CATALOG_CHECKED_AT },
+  { id: "toshiba-catalog-2025", makerId: "toshiba", title: "洗濯機総合カタログ 2025-03（機能・仕様 p.2–16）", url: "https://www.toshiba-lifestyle.com/sites/default/files/2025-08/laundries-2025-08.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "hisense-catalog-2025-top", makerId: "hisense", title: "洗濯機総合カタログ 2025-07（縦型 p.2–6）", url: "https://web.archive.org/web/20250905035958id_/https://www.hisense.co.jp/support/catalog/pdf/catalog_wash.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "sharp-catalog-2024", makerId: "sharp", title: "洗濯機総合カタログ 2024-03", url: "https://jp.sharp/catalog/pdf/ha/SHARP-sentaku-2024-3.pdf", checkedAt: CATALOG_CHECKED_AT },
   { id: "sharp-es-x11b-pdf", makerId: "sharp", title: "ES-X11B 公式仕様表", url: "https://jp.sharp/support/washer/spec/spec_77.pdf", checkedAt: CATALOG_CHECKED_AT },
@@ -336,8 +343,14 @@ function catalogSourceIds(product) {
   if (product.modelYear === 2023 && product.name === "UW-X1") return ["sharp-uw-x1-catalog"];
   if (product.modelYear === 2024 && product.makerId === "sharp") return ["sharp-catalog-2024"];
   if (product.modelYear === 2024 && product.makerId === "toshiba") return ["toshiba-catalog-2024"];
+  if (product.modelYear === 2024 && product.makerId === "panasonic" && product.type === "drum-washer-dryer") return ["panasonic-catalog-2025-drum"];
   if (product.modelYear === 2025) {
-    if (product.makerId === "panasonic" && product.type === "drum-washer-dryer") return ["panasonic-catalog-2026-drum"];
+    if (product.makerId === "panasonic" && product.type === "drum-washer-dryer") {
+      return /(?:E|B)$/.test(product.name) ? ["panasonic-catalog-2026-drum"] : ["panasonic-catalog-2025-drum"];
+    }
+    if (product.makerId === "panasonic" && product.type === "top-full-auto") {
+      return /^NA-F\d/.test(product.name) ? ["panasonic-catalog-2026-top"] : ["panasonic-catalog-2025-top"];
+    }
     if (product.makerId === "hitachi" && product.type !== "top-full-auto") return ["hitachi-catalog-2026"];
     if (product.makerId === "sharp") return ["sharp-catalog-2025"];
     if (product.makerId === "toshiba") return ["toshiba-catalog-2025"];
@@ -414,7 +427,7 @@ function conciseFeatureNames(product) {
 function updateDifferenceCopy(product) {
   if (product.capacities.washingKg == null) {
     product.differenceSummary = product.additionalSpecs.slice(0, 2).map((item) => `${item.label} ${item.value}`).join("・") || typeNames[product.type];
-    if (!product.preserveCopy) product.headline = `${product.name}は、${product.differenceSummary}が比較時の確認ポイントです。`;
+    if (!product.preserveCopy) product.headline = product.differenceSummary;
     delete product.preserveCopy;
     return;
   }
@@ -430,7 +443,7 @@ function updateDifferenceCopy(product) {
   product.fit = fitPoints.length
     ? `洗濯${product.capacities.washingKg}kg${product.capacities.dryingKg != null ? `・乾燥${product.capacities.dryingKg}kg` : ""}と${fitPoints.join("、")}を重視するお客様`
     : product.fit;
-  product.headline = `${product.name}は、${product.differenceSummary}が比較時の確認ポイントです。`;
+  product.headline = product.differenceSummary;
   delete product.preserveCopy;
 }
 
@@ -463,6 +476,125 @@ if (existsSync(ENRICHMENT_FILE)) {
   }
 }
 
+if (!existsSync(CATALOG_AUDIT_FILE)) {
+  throw new Error(`カタログ機能照合台帳がありません: ${CATALOG_AUDIT_FILE}`);
+}
+if (!existsSync(CATALOG_EXPLANATIONS_FILE)) {
+  throw new Error(`カタログ機能説明がありません: ${CATALOG_EXPLANATIONS_FILE}`);
+}
+
+const catalogAudit = JSON.parse(readFileSync(CATALOG_AUDIT_FILE, "utf8"));
+const catalogExplanations = JSON.parse(readFileSync(CATALOG_EXPLANATIONS_FILE, "utf8"));
+const featureExplainerParts = JSON.parse(readFileSync(FEATURE_EXPLAINER_PARTS_FILE, "utf8"));
+const officialFeatureDescriptions = new Map();
+if (existsSync(ENRICHMENT_FILE)) {
+  const enrichment = JSON.parse(readFileSync(ENRICHMENT_FILE, "utf8")).products || {};
+  for (const extra of Object.values(enrichment)) {
+    for (const feature of extra.features || []) {
+      if (feature.name && feature.description && !officialFeatureDescriptions.has(feature.name)) {
+        officialFeatureDescriptions.set(feature.name, feature.description);
+      }
+    }
+  }
+}
+if (catalogAudit.checkedAt !== CATALOG_CHECKED_AT) {
+  throw new Error(`カタログ機能照合日が一致しません: ${catalogAudit.checkedAt} / ${CATALOG_CHECKED_AT}`);
+}
+
+const catalogAuditByModel = new Map();
+for (const rule of catalogAudit.rules || []) {
+  if (!Array.isArray(rule.models) || !rule.models.length) throw new Error("カタログ機能照合台帳に対象機種のないルールがあります");
+  if (!Array.isArray(rule.features) || !rule.features.length) throw new Error(`カタログ機能照合台帳 ${rule.models.join(" / ")}: features が空です`);
+  for (const model of rule.models) {
+    if (catalogAuditByModel.has(model)) throw new Error(`カタログ機能照合台帳で機種が重複しています: ${model}`);
+    catalogAuditByModel.set(model, rule);
+  }
+}
+
+const catalogAuditedProducts = [];
+for (const product of products) {
+  const rule = catalogAuditByModel.get(product.name);
+  if (!rule) continue;
+  const sourceId = rule.sourceByModel?.[product.name] || rule.sourceId;
+  const pages = rule.pagesByModel?.[product.name] || rule.pages;
+  const source = sources.find((item) => item.id === sourceId);
+  if (!source) throw new Error(`カタログ機能照合台帳 ${product.name}: 情報源 ${sourceId} が未定義です`);
+  if (source.makerId !== product.makerId) throw new Error(`カタログ機能照合台帳 ${product.name}: メーカーと情報源が一致しません`);
+  if (!Array.isArray(pages) || !pages.length) throw new Error(`カタログ機能照合台帳 ${product.name}: 確認ページがありません`);
+
+  const seenFeatureNames = new Set();
+  product.features = rule.features.map(([name, groupId]) => {
+    if (!name || !groupId) throw new Error(`カタログ機能照合台帳 ${product.name}: 機能名または分類が空です`);
+    if (seenFeatureNames.has(name)) throw new Error(`カタログ機能照合台帳 ${product.name}: 機能が重複しています (${name})`);
+    seenFeatureNames.add(name);
+    if (!Object.hasOwn(typeNames, product.type) || !["washing", "drying", "care", "convenience"].includes(groupId)) {
+      throw new Error(`カタログ機能照合台帳 ${product.name}: 機能分類 ${groupId} が不正です`);
+    }
+    const description = catalogExplanations[name] || officialFeatureDescriptions.get(name);
+    if (!description || /対象機種欄で搭載を確認/.test(description)) {
+      throw new Error(`カタログ機能 ${name}: 接客向け説明がありません`);
+    }
+    return {
+      name,
+      description,
+      groupId,
+      sourceIds: [sourceId]
+    };
+  });
+
+  if (Object.hasOwn(rule, "dryingMethod")) product.drying.method = rule.dryingMethod;
+  product.specDetails ||= {};
+  if (Object.hasOwn(rule, "autoDosing")) product.specDetails.autoDosing = rule.autoDosing;
+  if (Object.hasOwn(rule, "smartphone")) product.specDetails.smartphone = rule.smartphone;
+  const highlightsByGroup = {
+    washing: "washHighlights",
+    drying: "dryingHighlights",
+    care: "careHighlights",
+    convenience: "convenienceHighlights"
+  };
+  for (const [groupId, key] of Object.entries(highlightsByGroup)) {
+    product.specDetails[key] = product.features.filter((feature) => feature.groupId === groupId).map((feature) => feature.name);
+  }
+  const panelFeature = product.features.find((feature) => /操作パネル|タッチパネル|タッチナビ|バック操作/.test(feature.name));
+  if (panelFeature) product.specDetails.panel = panelFeature.name;
+  else if (product.specDetails.panel === "寸法") product.specDetails.panel = "";
+  product.sourceIds = [...new Set([...product.sourceIds, sourceId])];
+  product.catalogEvidence = { sourceId, pages, checkedAt: catalogAudit.checkedAt };
+  catalogAuditedProducts.push(product.name);
+}
+
+const missingCatalogAuditModels = [...catalogAuditByModel.keys()].filter((model) => !products.some((product) => product.name === model));
+if (missingCatalogAuditModels.length) throw new Error(`カタログ機能照合台帳にアプリ未収録機種があります: ${missingCatalogAuditModels.join(", ")}`);
+
+const comparisonSupplements = JSON.parse(readFileSync(COMPARISON_SUPPLEMENTS_FILE, "utf8"));
+const comparisonFactKeys = new Set(["inverter", "dehumidification", "reservation", "blanketCapacity", "bodyWidthMm"]);
+const supplementedModels = new Set();
+for (const rule of comparisonSupplements.rules || []) {
+  const source = sources.find((item) => item.id === rule.sourceId);
+  if (!source || !Array.isArray(rule.pages) || !rule.pages.length) throw new Error(`比較補完データの出典が不正です: ${rule.sourceId}`);
+  if (!rule.facts || Object.keys(rule.facts).some((key) => !comparisonFactKeys.has(key)
+    || (key === "bodyWidthMm" ? !Number.isInteger(rule.facts[key]) || rule.facts[key] <= 0 : typeof rule.facts[key] !== "string" || !rule.facts[key]))) {
+    throw new Error(`比較補完データの項目が不正です: ${(rule.models || []).join(" / ")}`);
+  }
+  for (const model of rule.models || []) {
+    if (supplementedModels.has(model)) throw new Error(`比較補完データで機種が重複しています: ${model}`);
+    supplementedModels.add(model);
+    const product = products.find((item) => item.name === model);
+    if (!product || product.makerId !== source.makerId) throw new Error(`比較補完データの機種と出典が一致しません: ${model}`);
+    if (rule.facts.bodyWidthMm != null) {
+      if (product.dimensions.bodyWidthMm != null && product.dimensions.bodyWidthMm !== rule.facts.bodyWidthMm) {
+        throw new Error(`比較補完データの本体幅が既存仕様と一致しません: ${model}`);
+      }
+      product.dimensions.bodyWidthMm = rule.facts.bodyWidthMm;
+    }
+    product.comparisonFacts = {
+      ...rule.facts,
+      evidence: { sourceId: rule.sourceId, pages: rule.pages, checkedAt: comparisonSupplements.checkedAt }
+    };
+    product.sourceIds = [...new Set([...product.sourceIds, rule.sourceId])];
+  }
+}
+
 for (const product of products) updateDifferenceCopy(product);
 
 const data = {
@@ -470,8 +602,8 @@ const data = {
     categoryId: "washer",
     categoryName: "洗濯機",
     title: "洗濯機説明ナビ 2022–2026",
-    kicker: "ノジマ店頭スタッフ向け",
-    updatedAt: CATALOG_CHECKED_AT,
+    kicker: "家電量販店スタッフ向け",
+    updatedAt: APP_UPDATED_AT,
     cutoffDate: VERIFIED_AT,
     itemLabel: "機種",
     compareLimit: 4,
@@ -489,6 +621,12 @@ const data = {
   featureGroups: [
     { id: "washing", name: "洗浄" }, { id: "drying", name: "乾燥" }, { id: "care", name: "清潔・お手入れ" }, { id: "convenience", name: "使いやすさ・自動化" }
   ],
+  featureExplainerParts,
+  catalogAudit: {
+    checkedAt: catalogAudit.checkedAt,
+    auditedProducts: catalogAuditedProducts.length,
+    totalProducts: products.length
+  },
   sources,
   products
 };
@@ -529,9 +667,10 @@ const countRows = makers.flatMap((maker) => years.flatMap((year) => Object.entri
 
 const notes = `# 洗濯機説明ナビ 2022–2026 調査メモ
 
-最終確認日: ${CATALOG_CHECKED_AT}
+最終確認日: ${APP_UPDATED_AT}
 メーカー公式Web仕様確認日: ${VERIFIED_AT}
 保存済み公式カタログ確認日: ${CATALOG_CHECKED_AT}
+カテゴリー別詳細比較の追加項目確認日: ${comparisonSupplements.checkedAt}
 発売済み判定の基準日: ${VERIFIED_AT}（日本時間）
 
 ## 収録方針
@@ -539,6 +678,11 @@ const notes = `# 洗濯機説明ナビ 2022–2026 調査メモ
 - 国内メーカー公式サイトの年別一覧、ニュースリリース、製品・仕様ページだけを根拠にしています。
 - 2026年8月15日に追加された13枚の型番画像（IMG_3121.PNG〜IMG_3133.PNG）から101型番を転記し、全件が検索できることを自動検証しています。
 - 作業フォルダ内の公式カタログPDFは全ページを画像化して確認し、旧モデルはメーカー公式の製品・仕様ページ、ニュースリリース、過去カタログを併用しています。
+- 保存済み公式カタログの機種別機能表で対象欄を確認できた${catalogAuditedProducts.length}基本機種は、機能一覧をカタログ照合台帳から再生成しています。ページ全体のキーワード抽出結果は採用判定に使っていません。
+- 比較表の機能説明は、カタログの機能紹介とメーカー公式仕様を基に接客向けに要約しました。搭載判定は機種別機能表、説明は機能名ごとの台帳で管理し、説明が欠けた機能はデータ生成を停止します。
+- 保存済みカタログの機種別表に載っていない${products.length - catalogAuditedProducts.length}基本機種は、機能を「非搭載」とは断定せず、各機種のメーカー公式仕様ページ・旧カタログで確認できた情報を維持しています。
+- カテゴリー別詳細比較は指定の33項目を全機種に表示します。既存仕様から確認できない駆動方式・予約時間・毛布容量・除湿方式・本体幅は、機種別欄を読めた${supplementedModels.size}基本機種のみ追加しました。各補完値の出典ID・ページ・確認日は公開データの comparisonFacts.evidence に保持しています。
+- 比較表で「公式情報なし」は未確認、「該当なし」は製品タイプ上の非該当を示します。機能名の不掲載だけで非搭載とは判定しません。
 - 公式表記より細かい発売日は推測せず、年までしか確認できない場合は年のみを記載しています。
 - 左右開きは主要仕様と発売時期が同じ場合に1レコードへまとめ、色違いでも発売年が異なる場合は別レコードにしています。
 - 公式記載が確認できないスペックはアプリで「公式情報なし」とし、非対応とは扱っていません。
@@ -552,6 +696,13 @@ const notes = `# 洗濯機説明ナビ 2022–2026 調査メモ
 ${countRows.join("\n")}
 
 合計: ${products.length}基本機種
+
+## カタログ機能再照合
+
+- 機種別機能表との照合完了: ${catalogAuditedProducts.length} / ${products.length}基本機種
+- 照合済み機種では、カタログの対象機種欄に搭載表示がある項目だけを機能一覧へ収録しています。
+- 「ー」「非搭載」または対象機種欄が空欄の項目は収録していません。注記付きの項目は機能名を収録し、適用容量・条件は公式カタログの注記確認を促しています。
+- 再照合により、Panasonic SDシリーズの乾燥方式・自動投入構成、LXシリーズのグレード別機能、Sharpドラム式のCOCORO WASH対象範囲など、機種間の誤った横展開を修正しています。
 
 ## 採否・根拠・未収録項目
 

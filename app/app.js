@@ -7,7 +7,7 @@
     return;
   }
 
-  const { app, products, makers, washerTypes, capacityGroups, featureGroups, sources } = data;
+  const { app, products, makers, washerTypes, capacityGroups, featureGroups, featureExplainerParts = {}, sources } = data;
   const compareLimit = app.compareLimit || 7;
   const makerMap = Object.fromEntries(makers.map((item) => [item.id, item]));
   const typeMap = Object.fromEntries(washerTypes.map((item) => [item.id, item]));
@@ -49,7 +49,6 @@
     compareStatus: document.querySelector("#compareStatus"),
     differenceOnly: document.querySelector("#differenceOnly"),
     differenceModeHint: document.querySelector("#differenceModeHint"),
-    differenceSummary: document.querySelector("#differenceSummary"),
     guide: document.querySelector("#makerGuide"),
     dialog: document.querySelector("#detailDialog"),
     detail: document.querySelector("#detailContent")
@@ -303,7 +302,7 @@
         <div class="maker-label"><span>${html(maker.name)}</span><span>${product.modelYear}年</span></div>
         <div class="series-title"><h3>${html(product.name)}</h3><span>${html(product.releaseLabel)}</span></div>
         <p class="headline">${html(product.headline || product.differenceSummary)}</p>
-        <p class="talk">${html(product.differenceSummary || product.fit)}</p>
+        <p class="talk">${html(product.fit || product.differenceSummary)}</p>
         <div class="tag-list">${tags}</div>
         <div class="card-actions">
           <button type="button" class="compare-button${selected ? " selected" : ""}" data-compare="${attr(product.id)}" aria-label="${attr(`${maker.name} ${product.name}を${selected ? "比較から外す" : "比較に追加"}`)}" aria-pressed="${selected}" ${disabled ? "disabled" : ""}>${selected ? "比較から外す" : "比較に追加"}</button>
@@ -347,7 +346,6 @@
     el.compareContent.hidden = items.length === 0;
     if (!items.length) {
       el.compareWrap.innerHTML = "";
-      el.differenceSummary.innerHTML = "";
       return;
     }
 
@@ -363,103 +361,177 @@
       return { ...row, values, different };
     });
     const visibleRows = state.differenceOnly && items.length > 1 ? rows.filter((row) => row.different) : rows;
+    let currentSection = "";
     let currentGroup = "";
     const renderedRows = visibleRows.map((row) => {
-      const groupRow = row.group !== currentGroup
-        ? `<tr class="compare-group-row"><th colspan="${items.length + 1}">${html(row.group)}</th></tr>`
+      const sectionRow = row.section !== currentSection
+        ? `<tr class="compare-section-row"><th colspan="${items.length + 1}" scope="colgroup">${html(row.section)}</th></tr>`
         : "";
+      const groupRow = row.group !== currentGroup || sectionRow
+        ? `<tr class="compare-group-row"><th colspan="${items.length + 1}" scope="colgroup">${html(row.group)}</th></tr>`
+        : "";
+      currentSection = row.section;
       currentGroup = row.group;
-      return `${groupRow}<tr class="${row.different ? "has-difference" : "is-same"}"><th scope="row">${html(row.label)}${row.different ? '<span class="difference-mark">差あり</span>' : ""}</th>${row.values.map((value) => `<td>${value}</td>`).join("")}</tr>`;
+      return `${sectionRow}${groupRow}<tr class="${row.different ? "has-difference" : "is-same"}"><th scope="row">${html(row.label)}${row.different ? '<span class="difference-mark">差あり</span>' : ""}</th>${row.values.map((value) => `<td>${value}</td>`).join("")}</tr>`;
     }).join("");
 
-    renderDifferenceSummary(items, rows);
     const emptyDifference = !visibleRows.length ? '<tr><td class="no-difference-rows" colspan="99">表示できる差分はありません。</td></tr>' : renderedRows;
-    el.compareWrap.innerHTML = `<div class="compare-legend"><span><i aria-hidden="true"></i>値が異なる項目</span><small>機能名を押すと説明を表示（公式カタログ・商品情報の要約）／横にスクロールできます</small></div><table class="compare-table">
+    el.compareWrap.innerHTML = `<div class="compare-legend"><span><i aria-hidden="true"></i>値が異なる項目</span><small>「公式情報なし」は未確認、「該当なし」は製品タイプ上の非該当です。横にスクロールできます。</small></div><table class="compare-table">
+      <caption>カテゴリー別詳細比較</caption>
       <thead><tr><th scope="col">比較項目</th>${items.map((item) => `<th scope="col"><span>${html(makerMap[item.makerId].name)}</span><strong>${html(item.name)}</strong><small>${html(item.models.join(" / "))}</small><button type="button" data-compare="${attr(item.id)}" aria-label="${attr(item.name)}を比較から外す">×</button></th>`).join("")}</tr></thead>
       <tbody>${emptyDifference}</tbody>
     </table>`;
   }
 
   function compareRows(items) {
-    const includesDryer = items.some(isWasherDryer);
-    const additionalLabels = [...new Set(items.flatMap((product) => (product.additionalSpecs || []).map((item) => item.label)))];
-    const priority = [
-      row("タイプ", "最重要15項目", (p) => html(typeMap[p.type].name)),
-      row("洗濯容量", "最重要15項目", washingCapacityDisplay),
-      ...(includesDryer ? [row("乾燥容量", "最重要15項目", (p) => dryingApplicable(p, () => unit(p.capacities.dryingKg, "kg")))] : []),
-      row("本体サイズ", "最重要15項目", dimensions),
-      ...(includesDryer ? [row("乾燥方式", "最重要15項目", dryingDisplay)] : []),
-      row("メイン洗浄技術", "最重要15項目", (p) => firstFeatureExplainer(p, "washing")),
-      row("温水洗浄", "最重要15項目", (p) => featureExplainerList(p, /温水/, "washing")),
-      row("洗剤・柔軟剤自動投入", "最重要15項目", (p) => official(p.specDetails?.autoDosing)),
-      row("自動投入タンク数", "最重要15項目", autoDosingTanks),
-      ...(includesDryer ? [
-        row("乾燥仕上げ・シワ低減", "最重要15項目", (p) => dryingApplicable(p, () => featureExplainerList(p, /風アイロン|ジェット乾燥|ハイブリッド乾燥NEXT|ふんわリッチ速乾/, "drying"))),
-        row("乾燥フィルターのお手入れ", "最重要15項目", (p) => dryingApplicable(p, () => featureExplainerList(p, /乾燥フィルター|らくメンテ/, "care"))),
-        row("乾燥経路自動洗浄", "最重要15項目", (p) => dryingApplicable(p, () => featureExplainerList(p, /乾燥ダクト|乾燥経路|熱交換器/, "care")))
-      ] : []),
-      row("槽自動洗浄", "最重要15項目", (p) => featureExplainerList(p, /槽.*(?:洗浄|おそうじ|お掃除)/, "care")),
-      ...(includesDryer ? [
-        row("洗濯〜乾燥時間", "最重要15項目", (p) => dryingApplicable(p, () => unit(p.performance.washDryTimeMin, "分"))),
-        row("洗濯乾燥時消費電力量", "最重要15項目", (p) => dryingApplicable(p, () => unit(p.performance.washDryEnergyWh, "Wh")))
-      ] : [])
-    ];
     return [
-      ...priority,
-      row("メーカー", "基本情報・設置", (p) => html(makerMap[p.makerId].name)),
-      row("型番", "基本情報・設置", (p) => html(p.models.join(" / "))),
-      row("発売時期", "基本情報・設置", (p) => html(p.releaseLabel)),
-      row("ボディ幅", "基本情報・設置", (p) => unit(p.dimensions.bodyWidthMm, "mm")),
-      row("本体質量", "基本情報・設置", (p) => unit(p.dimensions.massKg, "kg")),
-      row("扉・ふた方向", "基本情報・設置", (p) => official(p.dimensions.doorDirection)),
-      row("防水パン条件", "基本情報・設置", (p) => official(p.dimensions.pan)),
-      row("排水方向", "基本情報・設置", (p) => official(p.specDetails?.drainage)),
-      row("洗浄機能", "洗浄・清潔", (p) => groupedFeatureExplainerList(p, "washing")),
-      row("清潔・お手入れ機能", "洗浄・清潔", (p) => groupedFeatureExplainerList(p, "care")),
-      ...(includesDryer ? [row("乾燥機能", "乾燥", (p) => dryingApplicable(p, () => groupedFeatureExplainerList(p, "drying")))] : []),
-      row("標準時間", "運転性能", (p) => performanceLines(p, "time")),
-      row("標準使用水量", "運転性能", (p) => performanceLines(p, "water")),
-      row("消費電力量", "運転性能", (p) => performanceLines(p, "energy")),
-      row("運転音", "運転性能", noise),
-      row("スマホ連携", "操作・便利", (p) => official(p.specDetails?.smartphone)),
-      row("操作パネル", "操作・便利", (p) => official(p.specDetails?.panel)),
-      row("便利機能", "操作・便利", (p) => groupedFeatureExplainerList(p, "convenience")),
-      ...additionalLabels.map((label) => row(label, "専用仕様", (p) => official((p.additionalSpecs || []).find((item) => item.label === label)?.value))),
-      row("向くお客様", "接客メモ", (p) => html(p.fit)),
-      row("注意事項", "接客メモ", (p) => list(p.cautions))
+      row("1. 基本情報・サイズ", "1.1 基本情報", "型番", (p) => html(p.models.join(" / "))),
+      row("1. 基本情報・サイズ", "1.1 基本情報", "駆動方式（インバーター方式）", inverterDisplay),
+      row("1. 基本情報・サイズ", "1.1 基本情報", "容量（洗濯・乾燥）", compareCapacityDisplay),
+      row("1. 基本情報・サイズ", "1.2 本体サイズ", "本体幅", (p) => unit(p.dimensions.bodyWidthMm, "mm")),
+      row("1. 基本情報・サイズ", "1.2 本体サイズ", "外形寸法（幅・奥行・高さ）", dimensions),
+
+      row("2. 洗濯機能", "2.1 洗浄性能・技術", "固有洗浄機能", (p) => comparisonFeatureList(p, (f) => f.groupId === "washing" && !isCourse(f.name) && !isAiFeature(f.name))),
+      row("2. 洗濯機能", "2.1 洗浄性能・技術", "AI運転", (p) => comparisonFeatureList(p, (f) => isAiFeature(f.name))),
+      row("2. 洗濯機能", "2.1 洗浄性能・技術", "黄ばみとり", (p) => comparisonFeatureList(p, (f) => f.groupId === "washing" && /黄ばみ|温水.*洗浄|汚れはがし|つけおき 高濃度洗浄/.test(f.name))),
+      row("2. 洗濯機能", "2.2 洗剤投入", "自動投入", (p) => laundryApplicable(p, () => official(p.specDetails?.autoDosing))),
+      row("2. 洗濯機能", "2.3 給水・節水機能", "節水", (p) => comparisonFeatureList(p, (f) => /節水|穴なし槽/.test(f.name))),
+      row("2. 洗濯機能", "2.3 給水・節水機能", "お湯取機能", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => /お湯取|ふろ水/.test(f.name)))),
+
+      row("3. 乾燥機能", "3.1 乾燥技術", "乾燥方式", dryingDisplay),
+      row("3. 乾燥機能", "3.1 乾燥技術", "除湿方式", dehumidificationDisplay),
+
+      row("4. 運転コース・衣類対応", "4.1 特殊運転コース", "時短運転", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => isQuickCourse(f.name)))),
+      row("4. 運転コース・衣類対応", "4.1 特殊運転コース", "衣類保護コース", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => isClothingCareCourse(f.name)))),
+      row("4. 運転コース・衣類対応", "4.1 特殊運転コース", "その他", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => isCourse(f.name) && !isQuickCourse(f.name) && !isClothingCareCourse(f.name) && !isTubCare(f.name) && !isHygieneFeature(f.name)))),
+      row("4. 運転コース・衣類対応", "4.2 対応衣類", "毛布・掛け布団容量", blanketCapacityDisplay),
+
+      row("5. 清潔・メンテナンス", "5.1 自動お手入れ・メンテナンス", "清潔_メンテナンス", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => f.groupId === "care" && isMaintenance(f.name) && !isTubCare(f.name)))),
+      row("5. 清潔・メンテナンス", "5.2 槽の清潔機能", "清潔_樽洗浄", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => f.groupId === "care" && isTubCare(f.name)))),
+      row("5. 清潔・メンテナンス", "5.3 衣類・庫内の衛生機能", "清潔_除菌", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => isHygieneFeature(f.name)))),
+      row("5. 清潔・メンテナンス", "5.4 その他", "清潔_その他清潔機能", (p) => laundryApplicable(p, () => comparisonFeatureList(p, (f) => f.groupId === "care" && !isMaintenance(f.name) && !isTubCare(f.name) && !isHygieneFeature(f.name)))),
+
+      row("6. 操作性・利便機能", "6.1 操作インターフェース", "タッチパネル", touchPanelDisplay),
+      row("6. 操作性・利便機能", "6.2 スマート・自動化機能", "スマホ連携", (p) => laundryApplicable(p, () => official(p.specDetails?.smartphone))),
+      row("6. 操作性・利便機能", "6.2 スマート・自動化機能", "予約機能（時間も）", reservationDisplay),
+      row("6. 操作性・利便機能", "6.3 その他の利便機能", "その他嬉しい機能", (p) => comparisonFeatureList(p, (f) => f.groupId === "convenience" && !/自動投入|スマホ|スマートフォン|COCORO WASH|ハピネスアップ|タッチ|操作パネル|予約|インバーター|モーター|お湯取|ふろ水/.test(f.name) && !isAiFeature(f.name))),
+
+      row("7. 運転時間・省エネ性能", "7.1 運転時間", "洗濯時間（標：洗濯）", (p) => laundryApplicable(p, () => unit(p.performance.washTimeMin, "分"))),
+      row("7. 運転時間・省エネ性能", "7.1 運転時間", "洗濯時間（標：洗濯・乾燥）", (p) => dryingApplicable(p, () => unit(p.performance.washDryTimeMin, "分"))),
+      row("7. 運転時間・省エネ性能", "7.1 運転時間", "洗濯時間（省エネ：洗濯・乾燥）", (p) => dryingApplicable(p, () => unit(p.performance.washDryEcoTimeMin, "分"))),
+      row("7. 運転時間・省エネ性能", "7.2 消費電力量", "消費電力量（標：洗濯）", washEnergyDisplay),
+      row("7. 運転時間・省エネ性能", "7.2 消費電力量", "消費電力量（標：洗濯・乾燥）", (p) => dryingApplicable(p, () => unit(p.performance.washDryEnergyWh, "Wh"))),
+      row("7. 運転時間・省エネ性能", "7.2 消費電力量", "消費電力量（省エネ：洗濯・乾燥）", (p) => dryingApplicable(p, () => unit(p.performance.washDryEcoEnergyWh, "Wh"))),
+      row("7. 運転時間・省エネ性能", "7.3 使用水量", "標準使用水量（洗濯）", (p) => laundryApplicable(p, () => unit(p.performance.waterL, "L"))),
+      row("7. 運転時間・省エネ性能", "7.3 使用水量", "標準使用水量（洗濯・乾燥）", (p) => dryingApplicable(p, () => unit(p.performance.washDryWaterL, "L")))
     ];
   }
 
-  function row(label, group, value) {
-    return { label, group, value };
+  function row(section, group, label, value) {
+    return { section, group, label, value };
   }
 
-  function renderDifferenceSummary(items, rows) {
-    if (items.length < 2) {
-      el.differenceSummary.innerHTML = '<h3 id="differenceSummaryTitle">主な違い</h3><p>もう1機種追加すると、事実の差分をここに自動表示します。</p>';
-      return;
-    }
-    const differences = rows.filter((row) => row.different).slice(0, 6);
-    const sameWashCapacity = items.every((item) => item.capacities.washingKg != null) && new Set(items.map((item) => item.capacities.washingKg)).size === 1
-      ? `<li>洗濯容量は全機種 ${number(items[0].capacities.washingKg)}kgです。</li>`
-      : "";
-    const differenceItems = differences.map((row) => `<li>${differenceSentence(row, items)}</li>`).join("");
-    el.differenceSummary.innerHTML = `<h3 id="differenceSummaryTitle">主な違い</h3><ul>${differenceItems || "<li>表示項目では差が確認できません。</li>"}${sameWashCapacity}</ul><p>優劣ではなく、公式情報で確認できた値の違いだけを表示しています。</p>`;
+  function laundryApplicable(product, render) {
+    return product.type === "ultrasonic-washer"
+      ? '<span class="not-applicable">該当なし（衣類全体を洗う洗濯機ではありません）</span>'
+      : render();
   }
 
-  function differenceSentence(row, items) {
-    const groups = new Map();
-    row.values.forEach((value, index) => {
-      const label = plainComparisonValue(value);
-      if (!groups.has(label)) groups.set(label, []);
-      groups.get(label).push(items[index].name);
+  function comparisonFeatureList(product, predicate) {
+    return explainerList(product.features.filter(predicate));
+  }
+
+  function isAiFeature(name) {
+    return /AI[ 　]?(?:お洗濯|エコナビ|標準)/i.test(name);
+  }
+
+  function isCourse(name) {
+    return /コース|モード/.test(name);
+  }
+
+  function isQuickCourse(name) {
+    return /時短|おいそぎ|化繊60分|洗乾\d+分/.test(name);
+  }
+
+  function isClothingCareCourse(name) {
+    return isCourse(name) && /おしゃれ着|ドライ|衣類長もち|ダウンジャケット|シワとり|しわケア|はっ水回復|タオル/.test(name);
+  }
+
+  function isTubCare(name) {
+    return /槽.*(?:洗浄|洗い|おそうじ|お掃除|乾燥|クリーン)|洗濯槽|カビクリーン/.test(name);
+  }
+
+  function isHygieneFeature(name) {
+    return /除菌|抗菌|消臭|UV|ナノイー|プラズマ|Ag\+/.test(name);
+  }
+
+  function isMaintenance(name) {
+    return /フィルター|乾燥ダクト|乾燥経路|熱交換器|パッキン|らくメンテ|自動おそうじ機能/.test(name);
+  }
+
+  function compareCapacityDisplay(product) {
+    if (product.capacities.washingKg == null) return laundryApplicable(product, () => unit(null, "kg"));
+    const washing = `洗濯 ${number(product.capacities.washingKg)}kg`;
+    const drying = product.capacities.dryingKg == null
+      ? '<span class="not-applicable">乾燥非搭載</span>'
+      : `乾燥 ${number(product.capacities.dryingKg)}kg`;
+    return `${washing}<br>${drying}`;
+  }
+
+  function inverterDisplay(product) {
+    return laundryApplicable(product, () => {
+      if (product.comparisonFacts?.inverter) return official(product.comparisonFacts.inverter);
+      const feature = product.features.find((item) => /インバーター/.test(item.name));
+      return feature ? html(feature.name) : official(null);
     });
-    return `<strong>${html(row.label)}</strong>：${[...groups.entries()].map(([value, names]) => `${html(names.join("・"))}「${html(value)}」`).join("／")}`;
   }
 
-  function plainComparisonValue(value) {
-    const text = String(value).replace(/<br\s*\/?\s*>/gi, "・").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
-    return text || "公式情報なし";
+  function dehumidificationDisplay(product) {
+    return dryingApplicable(product, () => {
+      if (product.comparisonFacts?.dehumidification) return official(product.comparisonFacts.dehumidification);
+      const method = product.drying.method || "";
+      if (/水冷除湿/.test(method)) return "水冷除湿";
+      if (/ヒートポンプ/.test(method) && !/ハイブリッド/.test(method)) return "ヒートポンプ式";
+      if (/排気式/.test(method)) return "排気式";
+      return official(null);
+    });
+  }
+
+  function blanketCapacityDisplay(product) {
+    return laundryApplicable(product, () => {
+      if (product.comparisonFacts?.blanketCapacity) return official(product.comparisonFacts.blanketCapacity);
+      return product.features.some((feature) => /毛布/.test(feature.name))
+        ? '毛布コースあり<br><span class="muted">対応容量は公式情報なし</span>'
+        : official(null);
+    });
+  }
+
+  function touchPanelDisplay(product) {
+    return laundryApplicable(product, () => {
+      const panel = product.specDetails?.panel || "";
+      if (/タッチ/.test(panel)) return official(panel);
+      const feature = product.features.find((item) => /タッチパネル|タッチナビ/.test(item.name));
+      return feature ? html(feature.name) : official(null);
+    });
+  }
+
+  function reservationDisplay(product) {
+    return laundryApplicable(product, () => {
+      if (product.comparisonFacts?.reservation) return official(product.comparisonFacts.reservation);
+      return product.features.some((feature) => /予約/.test(feature.name))
+        ? '予約機能あり<br><span class="muted">設定時間は公式情報なし</span>'
+        : official(null);
+    });
+  }
+
+  function washEnergyDisplay(product) {
+    return laundryApplicable(product, () => {
+      const { energyWh50Hz, energyWh60Hz, energyWh } = product.performance;
+      if (energyWh50Hz != null || energyWh60Hz != null) {
+        return `50Hz ${energyWh50Hz == null ? "—" : `${number(energyWh50Hz)}Wh`}<br>60Hz ${energyWh60Hz == null ? "—" : `${number(energyWh60Hz)}Wh`}`;
+      }
+      return unit(energyWh, "Wh");
+    });
   }
 
   function openDetail(productId) {
@@ -561,7 +633,14 @@
 
   function explainerList(features) {
     if (!features.length) return '<span class="muted">公式情報なし</span>';
-    return `<ul class="feature-explainer-list">${features.map((feature) => {
+    const seen = new Set();
+    const individualFeatures = features.flatMap((feature) => featureExplainerParts[feature.name] || [feature])
+      .filter((feature) => {
+        if (seen.has(feature.name)) return false;
+        seen.add(feature.name);
+        return true;
+      });
+    return `<ul class="feature-explainer-list">${individualFeatures.map((feature) => {
       const description = String(feature.description || "").trim();
       if (!description) return `<li><span class="feature-name-only">${html(feature.name)}</span></li>`;
       return `<li><details class="feature-explainer"><summary>${html(feature.name)}</summary><p class="feature-explainer-copy">${html(description)}</p></details></li>`;
@@ -584,6 +663,7 @@
     const value = product.specDetails?.autoDosing || "";
     if (/トリプル/.test(value)) return "3タンク";
     if (/洗剤.*柔軟剤|柔軟剤.*洗剤/.test(value)) return "2タンク";
+    if (/大容量タンク液体洗剤/.test(value)) return "1タンク";
     return '<span class="muted">公式情報なし</span>';
   }
 
